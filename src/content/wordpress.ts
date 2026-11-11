@@ -1,4 +1,10 @@
 import type { FaqItem, Feature, HeroData, Plan, ProductPageData } from './types';
+import {
+  contactHref,
+  industryFeatures,
+  supportCta,
+  supportLinkCta,
+} from './blocks';
 import { seo } from './seo';
 
 const websiteSpec = (value: string) => ({ value, label: 'WordPress Website' });
@@ -160,43 +166,10 @@ const hero: HeroData = {
     { icon: 'headset', label: '24/7 WordPress Support' },
   ],
   primaryCta: { label: 'Launch Your WordPress Site', href: '#plans' },
-  secondaryCta: { label: 'Contact Us', href: 'https://my.zedgehost.com/contact.php' },
+  secondaryCta: { label: 'Contact Us', href: contactHref },
   image: { src: '/assets/img/wordpress.webp', alt: 'Managed WordPress hosting by ZedgeHost' },
   variant: 'light',
 };
-
-const features: Feature[] = [
-  {
-    icon: 'globe',
-    title: 'For domain name registration?',
-    text: 'Manage your domains effortlessly from locking and unlocking to generating transfer codes in just a few clicks.',
-  },
-  {
-    icon: 'mail',
-    title: 'For your professional email?',
-    text: 'Each client receives a dedicated IP address, helping eliminate common email delivery issues.',
-  },
-  {
-    icon: 'server',
-    title: 'For server management?',
-    text: 'Manage your domains effortlessly from locking and unlocking to generating transfer codes in just a few clicks.',
-  },
-  {
-    icon: 'cloud',
-    title: 'For hosting your website?',
-    text: 'Our communications solutions support you at every stage of your digital transformation—whether you’re an individual, a small business, or a large organization.',
-  },
-  {
-    icon: 'shield',
-    title: 'For securing your website?',
-    text: 'Advanced security measures protect your website from malware, threats, and unauthorized access.',
-  },
-  {
-    icon: 'headset',
-    title: 'For technical support?',
-    text: 'Benefit from the expertise of our highly qualified team, bringing deep, hands-on experience in web hosting to support your success.',
-  },
-];
 
 const autoFeatures: Feature[] = [
   {
@@ -305,7 +278,7 @@ export const wordpressHostingPage: ProductPageData = {
       title: 'WordpressHosting Backed by Industry-Leading Features',
       subtitle:
         'All hosting types with the features you’ll need. One platform. Ready to deploy, scale, and grow.',
-      features,
+      features: industryFeatures,
     },
     {
       kind: 'split',
@@ -329,16 +302,12 @@ export const wordpressHostingPage: ProductPageData = {
       tone: 'mint',
     },
   ],
-  cta: {
-    title: 'Need Help? Our Support Team Is Available 24/7',
-    text: "Get expert assistance anytime through tickets or email. We're here to help you succeed online.",
-    primary: { label: 'Contact Us', href: 'https://my.zedgehost.com/contact.php' },
-  },
+  cta: supportCta,
   faq: {
     title: 'Frequently Asked Questions',
     subtitle:
       'Explore our FAQ to find quick answers to the most common questions about our products and services.',
     items: faqs,
-    cta: { label: 'Contact our support team', href: 'https://my.zedgehost.com/contact.php' },
+    cta: supportLinkCta,
   },
 };

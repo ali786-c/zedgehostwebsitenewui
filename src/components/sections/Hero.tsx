@@ -17,7 +17,7 @@ export function Hero({ data }: { data: HeroData }) {
           <div>
             {data.eyebrow && <span className="zh-eyebrow">{data.eyebrow}</span>}
             <h1>{data.title}</h1>
-            <p className="zh-hero__sub">{data.subtitle}</p>
+            {data.subtitle && <p className="zh-hero__sub">{data.subtitle}</p>}
 
             {data.priceFrom && (
               <p className="zh-hero__price">

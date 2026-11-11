@@ -45,17 +45,19 @@ function PlanCard({ plan, period }: { plan: Plan; period: BillingPeriod }) {
         ))}
       </ul>
 
-      <details className="zh-plan__more">
-        <summary>
-          More Features
-          <Icon name="chevron-down" size={15} />
-        </summary>
-        <ul>
-          {plan.more.map((feature) => (
-            <li key={feature}>{feature}</li>
-          ))}
-        </ul>
-      </details>
+      {plan.more.length > 0 && (
+        <details className="zh-plan__more">
+          <summary>
+            More Features
+            <Icon name="chevron-down" size={15} />
+          </summary>
+          <ul>
+            {plan.more.map((feature) => (
+              <li key={feature}>{feature}</li>
+            ))}
+          </ul>
+        </details>
+      )}
     </article>
   );
 }

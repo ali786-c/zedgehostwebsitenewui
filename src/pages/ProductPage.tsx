@@ -4,8 +4,11 @@ import { ComparisonTable } from '../components/sections/ComparisonTable';
 import { CtaBand } from '../components/sections/CtaBand';
 import { FAQSection } from '../components/sections/FAQSection';
 import { FeatureGrid } from '../components/sections/FeatureGrid';
+import { GroupsSection } from '../components/sections/GroupsSection';
 import { Hero } from '../components/sections/Hero';
 import { PlanGrid } from '../components/sections/PlanGrid';
+import { ProseSection } from '../components/sections/ProseSection';
+import { SpecsSection } from '../components/sections/SpecsSection';
 import { SplitSection } from '../components/sections/SplitSection';
 import { StepsSection } from '../components/sections/StepsSection';
 import { Section } from '../components/ui/Section';
@@ -51,17 +54,25 @@ export function ProductPage({ data, currentPath }: { data: ProductPageData; curr
             );
           case 'steps':
             return <StepsSection key={section.data.title} data={section.data} />;
+          case 'specs':
+            return <SpecsSection key={section.data.title} data={section.data} />;
+          case 'groups':
+            return <GroupsSection key={section.data.title} data={section.data} />;
+          case 'prose':
+            return <ProseSection key={section.data.title} data={section.data} />;
         }
       })}
 
       <CtaBand data={data.cta} />
 
-      <FAQSection
-        items={data.faq.items}
-        title={data.faq.title}
-        subtitle={data.faq.subtitle}
-        cta={data.faq.cta}
-      />
+      {data.faq && (
+        <FAQSection
+          items={data.faq.items}
+          title={data.faq.title}
+          subtitle={data.faq.subtitle}
+          cta={data.faq.cta}
+        />
+      )}
     </Layout>
   );
 }

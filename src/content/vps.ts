@@ -1,67 +1,7 @@
-import type { FaqItem, Feature, HeroData, Plan, ProductPageData } from './types';
+import type { FaqItem, Feature, HeroData, ProductPageData } from './types';
+import { contactHref, supportCta, supportLinkCta } from './blocks';
+import { vpsPlans } from './plans/vps';
 import { seo } from './seo';
-
-const specs = (cpu: string, ram: string, storage: string, transfer: string) => [
-  { value: cpu, label: 'CPU Cores' },
-  { value: ram, label: 'RAM' },
-  { value: storage, label: 'SSD Storage' },
-  { value: transfer, label: 'Data Transfer' },
-  { value: 'Up to 10 Gbps', label: 'Shared Port' },
-];
-
-const commonMore = [
-  'Full Root Access',
-  'Server Management Panel',
-  'VNC Access',
-  'Full Server Control',
-  'Optional WHMCS Integration',
-  'Up to 10 Gbps Shared Port',
-];
-
-const plans: Plan[] = [
-  {
-    name: 'VPS Basic',
-    tagline: 'Entry-level server for small websites',
-    price: 1699,
-    billing: 'monthly',
-    note: 'Monthly billing. Root access included.',
-    ctaHref: 'https://my.zedgehost.com/index.php?rp=/store/vps/basic-vps',
-    specs: specs('1 CPU Core', '2 GB', '40 GB', '2 TB'),
-    more: commonMore,
-  },
-  {
-    name: 'VPS Standard',
-    tagline: 'More memory for growing applications',
-    price: 2699,
-    billing: 'monthly',
-    note: 'Monthly billing. Root access included.',
-    ctaHref: 'https://my.zedgehost.com/index.php?rp=/store/vps/standard-vps',
-    specs: specs('1 CPU Core', '4 GB', '80 GB', '4 TB'),
-    more: commonMore,
-  },
-  {
-    name: 'VPS Advanced',
-    tagline: 'Extra power for busy workloads',
-    price: 3999,
-    billing: 'monthly',
-    note: 'Monthly billing. Root access included.',
-    ctaHref: 'https://my.zedgehost.com/index.php?rp=/store/vps/professional-vps',
-    popular: true,
-    badge: 'Popular',
-    specs: specs('2 CPU Cores', '6 GB', '120 GB', '6 TB'),
-    more: commonMore,
-  },
-  {
-    name: 'VPS Pro',
-    tagline: 'Maximum resources for demanding projects',
-    price: 4999,
-    billing: 'monthly',
-    note: 'Monthly billing. Root access included.',
-    ctaHref: 'https://my.zedgehost.com/index.php?rp=/store/vps/professional-vps-2',
-    specs: specs('2 CPU Cores', '8 GB', '160 GB', '8 TB'),
-    more: commonMore,
-  },
-];
 
 const hero: HeroData = {
   eyebrow: 'VPS Hosting Plans',
@@ -79,7 +19,7 @@ const hero: HeroData = {
     { icon: 'code', label: 'Root Access & Full Control' },
   ],
   primaryCta: { label: 'Compare VPS Plans', href: '#plans' },
-  secondaryCta: { label: 'Ask About VPS Plans', href: 'https://my.zedgehost.com/contact.php' },
+  secondaryCta: { label: 'Ask About VPS Plans', href: contactHref },
   image: { src: '/assets/img/cloud-infrastructure.webp', alt: 'Linux VPS servers by ZedgeHost' },
   variant: 'dark',
 };
@@ -143,7 +83,7 @@ export const linuxVpsPage: ProductPageData = {
     subtitle:
       'Choose the Linux VPS configuration that fits your workload. Every plan lists its processor, memory, storage, bandwidth, and monthly price.',
     note: 'Prices are in PKR by default — use the currency selector to switch to USD.',
-    plans,
+    plans: vpsPlans,
   },
   sections: [
     {
@@ -205,16 +145,12 @@ export const linuxVpsPage: ProductPageData = {
       features: management,
     },
   ],
-  cta: {
-    title: 'Need Help? Our Support Team Is Available 24/7',
-    text: "Get expert assistance anytime through tickets or email. We're here to help you succeed online.",
-    primary: { label: 'Contact Us', href: 'https://my.zedgehost.com/contact.php' },
-  },
+  cta: supportCta,
   faq: {
     title: 'Frequently Asked Questions',
     subtitle:
       'Explore our FAQ to find quick answers to the most common questions about our products and services.',
     items: faqs,
-    cta: { label: 'Contact our support team', href: 'https://my.zedgehost.com/contact.php' },
+    cta: supportLinkCta,
   },
 };

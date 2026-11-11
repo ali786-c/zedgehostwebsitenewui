@@ -407,5 +407,869 @@
         }
       }
     ]
+  },
+  "reseller-hosting": {
+    "title": "Reseller Hosting in Pakistan | Start Your Hosting Business",
+    "description": "Start your hosting business in Pakistan with reseller hosting, white-label support, and scalable infrastructure for agencies, freelancers, and entrepreneurs.",
+    "canonical": "https://zedgehost.com/reseller-hosting.html",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "h1": [
+      "Reseller Hosting in Pakistan for Agencies, Freelancers & Hosting Entrepreneurs"
+    ],
+    "schema": [
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Zedgehost Pakistan",
+          "url": "https://zedgehost.com/",
+          "logo": "https://zedgehost.com/assets/img/logo.png",
+          "description": "Web hosting, domain registration, VPS, cloud hosting, business email, and website security services in Pakistan.",
+          "areaServed": "Pakistan",
+          "sameAs": [
+            "https://zedgehost.com/"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Reseller Hosting in Pakistan",
+          "provider": {
+            "@type": "Organization",
+            "name": "Zedgehost Pakistan",
+            "url": "https://zedgehost.com/"
+          },
+          "areaServed": "Pakistan",
+          "url": "https://zedgehost.com/reseller-hosting.html",
+          "description": "Start your hosting business in Pakistan with reseller hosting, white-label support, and scalable infrastructure."
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is reseller hosting in Pakistan?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Reseller hosting in Pakistan lets agencies, freelancers, and entrepreneurs sell hosting services under their own brand while using the parent provider's infrastructure and support."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is reseller hosting good for agencies?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. It helps agencies and freelancers bundle hosting with website services, manage client accounts, and grow recurring revenue without owning the full server stack themselves."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I manage multiple client websites with reseller hosting?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Reseller hosting is built for multiple client accounts, white-label management, and simple scaling as your customer base grows."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you provide support for reseller hosting clients?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Zedgehost supports reseller hosting customers with infrastructure guidance and technical assistance to help them serve their own clients more effectively."
+              }
+            }
+          ]
+        }
+      ],
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://zedgehost.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Reseller Hosting",
+            "item": "https://zedgehost.com/reseller-hosting.html"
+          }
+        ]
+      }
+    ]
+  },
+  "dedicated-server": {
+    "title": "Dedicated Server Hosting Pakistan | High Performance Servers",
+    "description": "Dedicated server hosting in Pakistan for speed, security, and full control of critical business workloads.",
+    "canonical": "https://zedgehost.com/dedicated-server.html",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "h1": [
+      "Powerful Dedicated Servers for Maximum Performance"
+    ],
+    "schema": [
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Zedgehost Pakistan",
+          "url": "https://zedgehost.com/",
+          "logo": "https://zedgehost.com/assets/img/logo.png",
+          "description": "Web hosting, domain registration, VPS, cloud hosting, business email, and website security services in Pakistan.",
+          "areaServed": "Pakistan",
+          "sameAs": [
+            "https://zedgehost.com/"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Dedicated Server Hosting in Pakistan",
+          "provider": {
+            "@type": "Organization",
+            "name": "Zedgehost Pakistan",
+            "url": "https://zedgehost.com/"
+          },
+          "areaServed": "Pakistan",
+          "url": "https://zedgehost.com/dedicated-server.html",
+          "description": "Dedicated server hosting in Pakistan for speed, security, and full control of critical business workloads."
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is dedicated server hosting in Pakistan?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Dedicated server hosting in Pakistan gives a business an entire physical server with exclusive resources, making it ideal for high traffic, sensitive workloads, and mission-critical applications."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "When should I upgrade to a dedicated server?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You should consider a dedicated server when your website or application needs more performance, stronger security, full resource control, or higher reliability than shared or VPS hosting can provide."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is dedicated hosting secure?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Dedicated hosting provides better isolation, stronger security controls, and more direct management options for businesses running critical websites or enterprise workloads."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you offer managed support for dedicated hosting?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Zedgehost supports dedicated hosting clients with server management guidance, security, and technical assistance designed for performance-focused business environments."
+              }
+            }
+          ]
+        }
+      ],
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://zedgehost.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Dedicated Servers",
+            "item": "https://zedgehost.com/dedicated-server.html"
+          }
+        ]
+      }
+    ]
+  },
+  "windows-shared-hosting": {
+    "title": "Windows Hosting Pakistan | ASP.NET & Windows Shared Hosting",
+    "description": "Affordable Windows hosting in Pakistan for ASP.NET websites, business apps, and secure web hosting at competitive rates.",
+    "canonical": "https://zedgehost.com/windows-shared-hosting.html",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "h1": [
+      "Windows Hosting in Pakistan for ASP.NET Websites & Business Apps"
+    ],
+    "schema": [
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Zedgehost Pakistan",
+          "url": "https://zedgehost.com/",
+          "logo": "https://zedgehost.com/assets/img/logo.png",
+          "description": "Web hosting, domain registration, VPS, cloud hosting, business email, and website security services in Pakistan.",
+          "areaServed": "Pakistan",
+          "sameAs": [
+            "https://zedgehost.com/"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Windows Hosting in Pakistan",
+          "provider": {
+            "@type": "Organization",
+            "name": "Zedgehost Pakistan",
+            "url": "https://zedgehost.com/"
+          },
+          "areaServed": "Pakistan",
+          "url": "https://zedgehost.com/windows-shared-hosting.html",
+          "description": "Windows hosting in Pakistan for ASP.NET websites, business apps, and secure performance at affordable rates."
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is Windows hosting in Pakistan?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Windows hosting in Pakistan is a hosting environment designed for ASP.NET websites, business applications, and Microsoft-based solutions that require Windows compatibility and easy management tools."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Windows hosting good for ASP.NET websites?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Windows hosting is a strong choice for ASP.NET, MSSQL, and business applications that are built for Microsoft environments and require compatibility with Windows-based hosting."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I host a business website on Windows hosting?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Windows hosting is suitable for business websites, corporate portals, and app-driven projects that need stable performance and easy deployment tools."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you support Pakistani businesses with Windows hosting?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Zedgehost offers Windows hosting support for Pakistani businesses, developers, and organizations that need dependable hosting for Microsoft-based websites and apps."
+              }
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "windows-dedicated": {
+    "title": "Windows Dedicated Server Pakistan | Premium Servers",
+    "description": "Business-grade Windows dedicated server hosting in Pakistan for high-performance websites and applications.",
+    "canonical": "https://zedgehost.com/windows-dedicated.html",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "h1": [
+      "High-Performance Windows Dedicated Servers"
+    ],
+    "schema": [
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Zedgehost Pakistan",
+          "url": "https://zedgehost.com/",
+          "logo": "https://zedgehost.com/assets/img/logo.png",
+          "description": "Web hosting, domain registration, VPS, cloud hosting, business email, and website security services in Pakistan.",
+          "areaServed": "Pakistan",
+          "sameAs": [
+            "https://zedgehost.com/"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Windows Dedicated Server Hosting in Pakistan",
+          "provider": {
+            "@type": "Organization",
+            "name": "Zedgehost Pakistan",
+            "url": "https://zedgehost.com/"
+          },
+          "areaServed": "Pakistan",
+          "url": "https://zedgehost.com/windows-dedicated.html",
+          "description": "Business-grade Windows dedicated server hosting in Pakistan for high-performance websites and applications."
+        }
+      ]
+    ]
+  },
+  "windows-reseller": {
+    "title": "Windows Reseller Hosting Pakistan | Business Hosting Plans",
+    "description": "Web hosting and domain services in Pakistan.",
+    "canonical": "https://zedgehost.com/windows-reseller.html",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "h1": [
+      "Launch Your Hosting Business with Windows Reseller Hosting"
+    ],
+    "schema": [
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Zedgehost Pakistan",
+          "url": "https://zedgehost.com/",
+          "logo": "https://zedgehost.com/assets/img/logo.png",
+          "description": "Web hosting, domain registration, VPS, cloud hosting, business email, and website security services in Pakistan.",
+          "areaServed": "Pakistan",
+          "sameAs": [
+            "https://zedgehost.com/"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Zedgehost Pakistan",
+          "provider": {
+            "@type": "Organization",
+            "name": "Zedgehost Pakistan",
+            "url": "https://zedgehost.com/"
+          },
+          "areaServed": "Pakistan",
+          "url": "https://zedgehost.com/windows-reseller.html",
+          "description": "Web hosting and domain services in Pakistan."
+        }
+      ]
+    ]
+  },
+  "basic-vps-hosting": {
+    "title": "VPS Basic Hosting in Pakistan | Rs 1,699/mo - ZedgeHost",
+    "description": "See VPS Basic hosting specifications and pricing: 1 CPU Core, 2 GB RAM, 40 GB SSD Storage, and 2 TB data transfer for Rs 1,699 per month.",
+    "canonical": "https://zedgehost.com/basic-vps-hosting.html",
+    "robots": "index, follow, max-image-preview:large",
+    "h1": [
+      "VPS Basic"
+    ],
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://zedgehost.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Linux VPS Hosting",
+                "item": "https://zedgehost.com/linux-vps-server.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "VPS Basic",
+                "item": "https://zedgehost.com/basic-vps-hosting.html"
+              }
+            ]
+          },
+          {
+            "@type": "Product",
+            "@id": "https://zedgehost.com/basic-vps-hosting.html#product",
+            "name": "VPS Basic",
+            "description": "See VPS Basic hosting specifications and pricing: 1 CPU Core, 2 GB RAM, 40 GB SSD Storage, and 2 TB data transfer for Rs 1,699 per month.",
+            "image": "https://zedgehost.com/Images_WebP/vps-hosting.webp",
+            "brand": {
+              "@type": "Brand",
+              "name": "Zedgehost"
+            },
+            "url": "https://zedgehost.com/basic-vps-hosting.html",
+            "offers": {
+              "@type": "Offer",
+              "url": "https://my.zedgehost.com/index.php?rp=/store/vps/basic-vps",
+              "priceCurrency": "PKR",
+              "price": "1699.00",
+              "priceValidUntil": "2027-12-31",
+              "availability": "https://schema.org/InStock",
+              "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "price": "1699.00",
+                "priceCurrency": "PKR",
+                "unitText": "month"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "standard-vps-hosting": {
+    "title": "VPS Standard Hosting in Pakistan | Rs 2,699/mo - ZedgeHost",
+    "description": "See VPS Standard hosting specifications and pricing: 1 CPU Core, 4 GB RAM, 80 GB SSD Storage, and 4 TB data transfer for Rs 2,699 per month.",
+    "canonical": "https://zedgehost.com/standard-vps-hosting.html",
+    "robots": "index, follow, max-image-preview:large",
+    "h1": [
+      "VPS Standard"
+    ],
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://zedgehost.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Linux VPS Hosting",
+                "item": "https://zedgehost.com/linux-vps-server.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "VPS Standard",
+                "item": "https://zedgehost.com/standard-vps-hosting.html"
+              }
+            ]
+          },
+          {
+            "@type": "Product",
+            "@id": "https://zedgehost.com/standard-vps-hosting.html#product",
+            "name": "VPS Standard",
+            "description": "See VPS Standard hosting specifications and pricing: 1 CPU Core, 4 GB RAM, 80 GB SSD Storage, and 4 TB data transfer for Rs 2,699 per month.",
+            "image": "https://zedgehost.com/Images_WebP/vps-hosting.webp",
+            "brand": {
+              "@type": "Brand",
+              "name": "Zedgehost"
+            },
+            "url": "https://zedgehost.com/standard-vps-hosting.html",
+            "offers": {
+              "@type": "Offer",
+              "url": "https://my.zedgehost.com/index.php?rp=/store/vps/standard-vps",
+              "priceCurrency": "PKR",
+              "price": "2699.00",
+              "priceValidUntil": "2027-12-31",
+              "availability": "https://schema.org/InStock",
+              "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "price": "2699.00",
+                "priceCurrency": "PKR",
+                "unitText": "month"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "professional-vps-hosting": {
+    "title": "VPS Advanced Hosting in Pakistan | Rs 3,999/mo - ZedgeHost",
+    "description": "See VPS Advanced hosting specifications and pricing: 2 CPU Cores, 6 GB RAM, 120 GB SSD Storage, and 6 TB data transfer for Rs 3,999 per month.",
+    "canonical": "https://zedgehost.com/professional-vps-hosting.html",
+    "robots": "index, follow, max-image-preview:large",
+    "h1": [
+      "VPS Advanced"
+    ],
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://zedgehost.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Linux VPS Hosting",
+                "item": "https://zedgehost.com/linux-vps-server.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "VPS Advanced",
+                "item": "https://zedgehost.com/professional-vps-hosting.html"
+              }
+            ]
+          },
+          {
+            "@type": "Product",
+            "@id": "https://zedgehost.com/professional-vps-hosting.html#product",
+            "name": "VPS Advanced",
+            "description": "See VPS Advanced hosting specifications and pricing: 2 CPU Cores, 6 GB RAM, 120 GB SSD Storage, and 6 TB data transfer for Rs 3,999 per month.",
+            "image": "https://zedgehost.com/Images_WebP/vps-hosting.webp",
+            "brand": {
+              "@type": "Brand",
+              "name": "Zedgehost"
+            },
+            "url": "https://zedgehost.com/professional-vps-hosting.html",
+            "offers": {
+              "@type": "Offer",
+              "url": "https://my.zedgehost.com/index.php?rp=/store/vps/professional-vps",
+              "priceCurrency": "PKR",
+              "price": "3999.00",
+              "priceValidUntil": "2027-12-31",
+              "availability": "https://schema.org/InStock",
+              "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "price": "3999.00",
+                "priceCurrency": "PKR",
+                "unitText": "month"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "pro-vps-hosting": {
+    "title": "VPS Pro Hosting in Pakistan | Rs 4,999/mo - ZedgeHost",
+    "description": "See VPS Pro hosting specifications and pricing: 2 CPU Cores, 8 GB RAM, 160 GB SSD Storage, and 8 TB data transfer for Rs 4,999 per month.",
+    "canonical": "https://zedgehost.com/pro-vps-hosting.html",
+    "robots": "index, follow, max-image-preview:large",
+    "h1": [
+      "VPS Pro"
+    ],
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://zedgehost.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Linux VPS Hosting",
+                "item": "https://zedgehost.com/linux-vps-server.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "VPS Pro",
+                "item": "https://zedgehost.com/pro-vps-hosting.html"
+              }
+            ]
+          },
+          {
+            "@type": "Product",
+            "@id": "https://zedgehost.com/pro-vps-hosting.html#product",
+            "name": "VPS Pro",
+            "description": "See VPS Pro hosting specifications and pricing: 2 CPU Cores, 8 GB RAM, 160 GB SSD Storage, and 8 TB data transfer for Rs 4,999 per month.",
+            "image": "https://zedgehost.com/Images_WebP/vps-hosting.webp",
+            "brand": {
+              "@type": "Brand",
+              "name": "Zedgehost"
+            },
+            "url": "https://zedgehost.com/pro-vps-hosting.html",
+            "offers": {
+              "@type": "Offer",
+              "url": "https://my.zedgehost.com/index.php?rp=/store/vps/professional-vps-2",
+              "priceCurrency": "PKR",
+              "price": "4999.00",
+              "priceValidUntil": "2027-12-31",
+              "availability": "https://schema.org/InStock",
+              "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "price": "4999.00",
+                "priceCurrency": "PKR",
+                "unitText": "month"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "bussiness-email": {
+    "title": "Business Email Hosting Pakistan | Professional Email",
+    "description": "Professional business email hosting in Pakistan with custom domains and secure mail services.",
+    "canonical": "https://zedgehost.com/bussiness-email.html",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "h1": [
+      "Professional Business Email for Your Brand"
+    ],
+    "schema": [
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Zedgehost Pakistan",
+          "url": "https://zedgehost.com/",
+          "logo": "https://zedgehost.com/assets/img/logo.png",
+          "description": "Web hosting, domain registration, VPS, cloud hosting, business email, and website security services in Pakistan.",
+          "areaServed": "Pakistan",
+          "sameAs": [
+            "https://zedgehost.com/"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Business Email Hosting in Pakistan",
+          "provider": {
+            "@type": "Organization",
+            "name": "Zedgehost Pakistan",
+            "url": "https://zedgehost.com/"
+          },
+          "areaServed": "Pakistan",
+          "url": "https://zedgehost.com/bussiness-email.html",
+          "description": "Professional business email hosting in Pakistan with custom domains and secure mail services."
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is business email hosting in Pakistan?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Business email hosting in Pakistan gives companies branded email addresses like you@yourbusiness.com with secure mailboxes, management tools, and reliable uptime for everyday communication."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why use a custom domain for business email?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A custom domain email looks more professional, builds trust with customers, and helps businesses appear credible compared with free services like Gmail or Yahoo."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is business email hosting secure?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Business email hosting includes spam and virus protection, secure access, mailbox management, and reliable delivery to keep communication safe and efficient."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I use business email on mobile devices?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Business email is typically accessible through webmail, IMAP/SMTP, and mobile mail apps so teams can stay connected from anywhere."
+              }
+            }
+          ]
+        }
+      ],
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://zedgehost.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Business Email",
+            "item": "https://zedgehost.com/bussiness-email.html"
+          }
+        ]
+      }
+    ]
+  },
+  "enterprise-email": {
+    "title": "Enterprise Email Hosting Pakistan | Professional Email",
+    "description": "Professional business email hosting in Pakistan with custom domains and secure mail services.",
+    "canonical": "https://zedgehost.com/enterprise-email.html",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "h1": [
+      "Enterprise Email Solutions for Growing Businesses"
+    ],
+    "schema": [
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Zedgehost Pakistan",
+          "url": "https://zedgehost.com/",
+          "logo": "https://zedgehost.com/assets/img/logo.png",
+          "description": "Web hosting, domain registration, VPS, cloud hosting, business email, and website security services in Pakistan.",
+          "areaServed": "Pakistan",
+          "sameAs": [
+            "https://zedgehost.com/"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Business Email Hosting in Pakistan",
+          "provider": {
+            "@type": "Organization",
+            "name": "Zedgehost Pakistan",
+            "url": "https://zedgehost.com/"
+          },
+          "areaServed": "Pakistan",
+          "url": "https://zedgehost.com/enterprise-email.html",
+          "description": "Professional business email hosting in Pakistan with custom domains and secure mail services."
+        }
+      ],
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://zedgehost.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Enterprise Email",
+            "item": "https://zedgehost.com/enterprise-email.html"
+          }
+        ]
+      }
+    ]
+  },
+  "siteLock": {
+    "title": "Website Security Pakistan | SiteLock Protection Plans",
+    "description": "Secure websites in Pakistan with malware protection, monitoring, and website security solutions.",
+    "canonical": "https://zedgehost.com/siteLock.html",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "h1": [
+      "Protect Your Website with SiteLock Security"
+    ],
+    "schema": [
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Zedgehost Pakistan",
+          "url": "https://zedgehost.com/",
+          "logo": "https://zedgehost.com/assets/img/logo.png",
+          "description": "Web hosting, domain registration, VPS, cloud hosting, business email, and website security services in Pakistan.",
+          "areaServed": "Pakistan",
+          "sameAs": [
+            "https://zedgehost.com/"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Website Security in Pakistan",
+          "provider": {
+            "@type": "Organization",
+            "name": "Zedgehost Pakistan",
+            "url": "https://zedgehost.com/"
+          },
+          "areaServed": "Pakistan",
+          "url": "https://zedgehost.com/siteLock.html",
+          "description": "Secure websites in Pakistan with malware protection, monitoring, and website security solutions."
+        }
+      ]
+    ]
+  },
+  "website-backup": {
+    "title": "Website Backup Pakistan | Secure Cloud Backup Solutions",
+    "description": "Protect websites in Pakistan with secure backup services, data recovery, and business continuity support.",
+    "canonical": "https://zedgehost.com/website-backup.html",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "h1": [
+      "Automated Website Backups with CodeGuard"
+    ],
+    "schema": [
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Zedgehost Pakistan",
+          "url": "https://zedgehost.com/",
+          "logo": "https://zedgehost.com/assets/img/logo.png",
+          "description": "Web hosting, domain registration, VPS, cloud hosting, business email, and website security services in Pakistan.",
+          "areaServed": "Pakistan",
+          "sameAs": [
+            "https://zedgehost.com/"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Website Backup in Pakistan",
+          "provider": {
+            "@type": "Organization",
+            "name": "Zedgehost Pakistan",
+            "url": "https://zedgehost.com/"
+          },
+          "areaServed": "Pakistan",
+          "url": "https://zedgehost.com/website-backup.html",
+          "description": "Protect websites in Pakistan with secure backup services, data recovery, and business continuity support."
+        }
+      ]
+    ]
+  },
+  "digicert-certificate": {
+    "title": "SSL Certificate Pakistan | DigiCert & Security Solutions",
+    "description": "Get SSL certificates in Pakistan for stronger trust, secure browsing, and website protection.",
+    "canonical": "https://zedgehost.com/digicert-certificate.html",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "h1": [
+      "Secure Your Website with SSL Certificates"
+    ],
+    "schema": [
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Zedgehost Pakistan",
+          "url": "https://zedgehost.com/",
+          "logo": "https://zedgehost.com/assets/img/logo.png",
+          "description": "Web hosting, domain registration, VPS, cloud hosting, business email, and website security services in Pakistan.",
+          "areaServed": "Pakistan",
+          "sameAs": [
+            "https://zedgehost.com/"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "SSL Certificate in Pakistan",
+          "provider": {
+            "@type": "Organization",
+            "name": "Zedgehost Pakistan",
+            "url": "https://zedgehost.com/"
+          },
+          "areaServed": "Pakistan",
+          "url": "https://zedgehost.com/digicert-certificate.html",
+          "description": "Get SSL certificates in Pakistan for stronger trust, secure browsing, and website protection."
+        }
+      ]
+    ]
   }
 }

@@ -17,7 +17,7 @@ export interface Cta {
 export interface HeroData {
   eyebrow?: string;
   title: string;
-  subtitle: string;
+  subtitle?: string;
   priceFrom?: number;
   priceRegular?: number;
   priceSuffix?: string;
@@ -115,6 +115,27 @@ export interface StepsSectionData {
   items: { title: string; text: string }[];
 }
 
+export interface ProseSectionData {
+  eyebrow?: string;
+  title: string;
+  paragraphs: string[];
+  tone?: 'default' | 'mint';
+}
+
+export interface GroupsSectionData {
+  eyebrow?: string;
+  title: string;
+  subtitle?: string;
+  groups: { title: string; items: string[] }[];
+}
+
+export interface SpecsSectionData {
+  eyebrow?: string;
+  title: string;
+  subtitle?: string;
+  rows: { label: string; value: string }[];
+}
+
 export type ProductSection =
   | { kind: 'split'; data: SplitSectionData }
   | {
@@ -126,7 +147,10 @@ export type ProductSection =
       tone?: 'default' | 'mint';
     }
   | { kind: 'comparison'; data: ComparisonSectionData }
-  | { kind: 'steps'; data: StepsSectionData };
+  | { kind: 'steps'; data: StepsSectionData }
+  | { kind: 'specs'; data: SpecsSectionData }
+  | { kind: 'groups'; data: GroupsSectionData }
+  | { kind: 'prose'; data: ProseSectionData };
 
 export interface FaqSectionData {
   title: string;
@@ -142,5 +166,6 @@ export interface ProductPageData {
   plans: PlanSectionData;
   sections: ProductSection[];
   cta: CtaBandData;
-  faq: FaqSectionData;
+  /** Omitted on pages that have no FAQ section. */
+  faq?: FaqSectionData;
 }
