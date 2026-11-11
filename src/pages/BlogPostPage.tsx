@@ -1,9 +1,9 @@
 import { blogPosts, breadcrumbTrail, relatedPosts } from '../content/blog';
 import type { BlogPostData } from '../content/types';
-import { ArticleBody } from '../components/blog/ArticleBody';
+import { ArticleBody } from '../components/article/ArticleBody';
+import { FaqBlock } from '../components/article/FaqBlock';
+import { InlineText } from '../components/article/InlineText';
 import { BlogCard } from '../components/blog/BlogCard';
-import { FaqBlock } from '../components/blog/FaqBlock';
-import { InlineText } from '../components/blog/InlineText';
 import { Layout } from '../components/layout/Layout';
 import { Button } from '../components/ui/Button';
 import { Container } from '../components/ui/Container';

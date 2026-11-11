@@ -91,7 +91,7 @@ const businessFeatures: Feature[] = [
   },
 ];
 
-const enterpriseFeatures: Feature[] = [
+export const enterpriseFeatures: Feature[] = [
   {
     icon: 'database',
     title: 'More than Enough Mailbox Space',
@@ -160,7 +160,8 @@ export const businessEmailPage: ProductPageData = {
       kind: 'features',
       eyebrow: 'Email',
       title: 'Email Hosting Features',
-      subtitle: 'Secure, reliable, fast, scalable, encrypted, spam-free, cloud-based, and user-friendly.',
+      subtitle:
+        'Secure, reliable, fast, scalable, encrypted, spam-free, cloud-based, and user-friendly.',
       features: businessFeatures,
       tone: 'mint',
     },

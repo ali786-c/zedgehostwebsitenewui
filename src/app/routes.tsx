@@ -32,8 +32,15 @@ import {
   WordPressHostingPage,
 } from '../pages/productRoutes';
 import { blogIndex, blogPosts } from '../content/blog';
+import { contentPages } from '../content/pages';
+import { authPages } from '../content/auth';
+import { builderPage } from '../content/builder';
+import { gapsPage } from '../content/gaps';
+import { AuthPage } from '../pages/AuthPage';
 import { BlogIndexPage } from '../pages/BlogIndexPage';
 import { BlogPostPage } from '../pages/BlogPostPage';
+import { ContentPage } from '../pages/ContentPage';
+import { ProductPage } from '../pages/ProductPage';
 import { aboutSeo } from '../content/about';
 import { homeSeo } from '../content/home';
 import { seo } from '../content/seo';
@@ -87,6 +94,20 @@ export const routes: RouteDefinition[] = [
   productRoute('bulk-transfer.html', BulkTransferPage, seo.bulkTransfer),
   productRoute('domain-bulk-register.html', BulkRegisterPage, seo.bulkRegister),
   productRoute('domain-name-suggestion.html', NameSuggestionPage, seo.domainSuggestion),
+  {
+    key: 'builder',
+    path: '/builder.html',
+    output: 'builder.html',
+    Page: () => <ProductPage data={builderPage} currentPath="builder.html" />,
+    seo: builderPage.seo,
+  },
+  {
+    key: 'gaps',
+    path: '/gaps.html',
+    output: 'gaps.html',
+    Page: () => <ProductPage data={gapsPage} currentPath="gaps.html" />,
+    seo: gapsPage.seo,
+  },
   // Blog: one template, one route per post, all built from `content/blog`.
   { key: 'blog', path: '/blog.html', output: 'blog.html', Page: BlogIndexPage, seo: blogIndex.seo },
   ...blogPosts.map((post): RouteDefinition => {
@@ -97,6 +118,28 @@ export const routes: RouteDefinition[] = [
       output: `${post.slug}.html`,
       Page,
       seo: post.seo,
+    };
+  }),
+  // Marketing guides and legal pages: one ContentPage template, data only.
+  ...contentPages.map((page): RouteDefinition => {
+    const Page = (): ReactElement => <ContentPage data={page} />;
+    return {
+      key: page.output.replace(/\.html$/, ''),
+      path: `/${page.output}`,
+      output: page.output,
+      Page,
+      seo: page.seo,
+    };
+  }),
+  // Client-area entry pages: legacy WHMCS forms, new presentation.
+  ...authPages.map((page): RouteDefinition => {
+    const Page = (): ReactElement => <AuthPage data={page} />;
+    return {
+      key: page.output.replace(/\.html$/, ''),
+      path: `/${page.output}`,
+      output: page.output,
+      Page,
+      seo: page.seo,
     };
   }),
 ];

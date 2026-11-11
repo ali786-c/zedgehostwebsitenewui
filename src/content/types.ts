@@ -72,7 +72,8 @@ export interface PlanSectionData {
 export interface Feature {
   icon: IconName;
   title: string;
-  text: string;
+  /** Omitted by icon-only strips, where the legacy page has no supporting line. */
+  text?: string;
 }
 
 export interface FaqItem {
@@ -180,19 +181,33 @@ export interface FaqSectionData {
   cta?: Cta;
 }
 
-/** A run of article copy: plain text, an inline link, or emphasis. */
+/** A run of article copy: plain text, an inline link, emphasis or inline code. */
 export interface ArticleInline {
   text: string;
   href?: string;
   strong?: boolean;
+  code?: boolean;
 }
 
 /** One block of article body copy; the article renderer owns the markup. */
 export type ArticleBlock =
-  | { kind: 'heading'; level: 2 | 3; text: string }
+  | { kind: 'heading'; level: 2 | 3 | 4; text: string }
   | { kind: 'paragraph'; content: ArticleInline[] }
   | { kind: 'list'; ordered: boolean; items: ArticleInline[][] }
   | { kind: 'table'; head: ArticleInline[][]; rows: ArticleInline[][][] };
+
+/** Marketing, guide, legal and policy pages that are pure long-form copy. */
+export interface ContentPageData {
+  seo: SeoData;
+  /** Output filename, used for the header's active navigation state. */
+  output: string;
+  title: string;
+  lead?: ArticleInline[];
+  blocks: ArticleBlock[];
+  faq?: { title?: string; items: FaqItem[] };
+  /** Closing call to action; some legacy pages have a second button next to it. */
+  cta?: { content: ArticleInline[]; cta: Cta; secondary?: Cta };
+}
 
 /** Everything a blog post needs; BlogPostPage owns the layout. */
 export interface BlogPostData {

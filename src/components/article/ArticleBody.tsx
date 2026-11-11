@@ -1,6 +1,8 @@
 import type { ArticleBlock } from '../../content/types';
 import { InlineText } from './InlineText';
 
+const HEADING_TAGS = { 2: 'h2', 3: 'h3', 4: 'h4' } as const;
+
 /** Renders the typed article body: headings, copy with inline links, lists and tables. */
 export function ArticleBody({ blocks }: { blocks: ArticleBlock[] }) {
   return (
@@ -8,12 +10,10 @@ export function ArticleBody({ blocks }: { blocks: ArticleBlock[] }) {
       {blocks.map((block, index) => {
         const key = `${block.kind}-${index}`;
         switch (block.kind) {
-          case 'heading':
-            return block.level === 2 ? (
-              <h2 key={key}>{block.text}</h2>
-            ) : (
-              <h3 key={key}>{block.text}</h3>
-            );
+          case 'heading': {
+            const Heading = HEADING_TAGS[block.level];
+            return <Heading key={key}>{block.text}</Heading>;
+          }
           case 'paragraph':
             return (
               <p key={key}>

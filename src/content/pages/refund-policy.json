@@ -1,0 +1,186 @@
+{
+  "slug": "refund-policy",
+  "output": "refund-policy.html",
+  "title": "ZedgeHost - Refund Policy",
+  "description": "Review the privacy policy and service terms for Zedgehost Pakistan hosting and domain solutions.",
+  "canonical": "https://zedgehost.com/policy.html",
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+  "h1": "Refund Policy",
+  "schema": [
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Zedgehost Pakistan",
+        "url": "https://zedgehost.com/",
+        "logo": "https://zedgehost.com/assets/img/logo.png",
+        "description": "Web hosting, domain registration, VPS, cloud hosting, business email, and website security services in Pakistan.",
+        "areaServed": "Pakistan",
+        "sameAs": [
+          "https://zedgehost.com/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Privacy Policy Zedgehost Pakistan",
+        "provider": {
+          "@type": "Organization",
+          "name": "Zedgehost Pakistan",
+          "url": "https://zedgehost.com/"
+        },
+        "areaServed": "Pakistan",
+        "url": "https://zedgehost.com/policy.html",
+        "description": "Review the privacy policy and service terms for Zedgehost Pakistan hosting and domain solutions."
+      }
+    ]
+  ],
+  "lead": [
+    {
+      "text": "Review the Privacy Policy of Zedgehost. Learn how we securely collect, use, and protect your personal and website data across all our hosting services."
+    }
+  ],
+  "blocks": [
+    {
+      "kind": "heading",
+      "level": 2,
+      "text": "1. Zedgehost Refund Guarantee"
+    },
+    {
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "At Zedgehost, we stand behind the quality of our web hosting services. If you are not completely satisfied with our performance, support, or features, we offer a refund policy subject to the terms below."
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "text": "2. Eligible Services for Refund"
+    },
+    {
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "We offer a "
+        },
+        {
+          "text": "30-Day Money-Back Guarantee",
+          "strong": true
+        },
+        {
+          "text": " on the following Zedgehost services:"
+        }
+      ]
+    },
+    {
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "text": "Shared Web Hosting"
+          }
+        ],
+        [
+          {
+            "text": "WordPress Hosting"
+          }
+        ],
+        [
+          {
+            "text": "Reseller Hosting"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "If you cancel your account within the first 30 days of purchase, you will receive a full refund of the hosting fees."
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "text": "3. Non-Refundable Services"
+    },
+    {
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "Due to the nature of certain products, the following Zedgehost services are "
+        },
+        {
+          "text": "strictly non-refundable",
+          "strong": true
+        },
+        {
+          "text": ":"
+        }
+      ]
+    },
+    {
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "text": "Domain Name Registrations, Transfers, and Renewals. (Once a domain is registered, it belongs to you and cannot be reversed)."
+          }
+        ],
+        [
+          {
+            "text": "VPS (Virtual Private Servers) and Dedicated Servers."
+          }
+        ],
+        [
+          {
+            "text": "SSL Certificates, SiteLock, and other third-party add-ons."
+          }
+        ],
+        [
+          {
+            "text": "Setup fees, custom software installation fees, or premium support services."
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "text": "4. How to Request a Refund"
+    },
+    {
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "To request a refund, you must submit a cancellation request via the Zedgehost Client Area within the eligible time frame. Once the request is verified, the refund will be processed to your original payment method (e.g., Credit Card, PayPal, or local bank transfer) within 7-10 business days."
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "text": "5. Account Suspension and Refunds"
+    },
+    {
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "If your Zedgehost account is suspended or terminated due to a violation of our Terms of Service (e.g., spamming, hosting illegal content, or abuse of server resources), you will "
+        },
+        {
+          "text": "not",
+          "strong": true
+        },
+        {
+          "text": " be eligible for any refund."
+        }
+      ]
+    }
+  ]
+}

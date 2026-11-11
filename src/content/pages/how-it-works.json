@@ -1,0 +1,269 @@
+{
+  "slug": "how-it-works",
+  "output": "how-it-works.html",
+  "title": "How ZedgeHost Works | Our Business Model & Customer Journey",
+  "description": "How ZedgeHost works: what we sell, how ordering and checkout works, how payments are processed through our payment gateway, and how you manage your hosting after signup.",
+  "canonical": "https://zedgehost.com/how-it-works.html",
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+  "h1": "How ZedgeHost Works",
+  "schema": [
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Zedgehost Pakistan",
+        "url": "https://zedgehost.com/",
+        "logo": "https://zedgehost.com/assets/img/logo.png",
+        "description": "Web hosting, domain registration, VPS, cloud hosting, business email, and website security services in Pakistan.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Chak 75 A SB, Lokri",
+          "addressLocality": "Sargodha",
+          "addressRegion": "Punjab",
+          "addressCountry": "PK"
+        },
+        "areaServed": "Pakistan",
+        "sameAs": [
+          "https://zedgehost.com/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "How ZedgeHost Works",
+        "url": "https://zedgehost.com/how-it-works.html",
+        "description": "How ZedgeHost works: what we sell, how ordering and checkout works, how payments are processed through our payment gateway, and how you manage your hosting after signup."
+      }
+    ]
+  ],
+  "lead": [
+    {
+      "text": "Our business model, our services, and the complete journey from choosing a plan to managing your website — including exactly how payments work at checkout."
+    }
+  ],
+  "blocks": [
+    {
+      "kind": "heading",
+      "level": 2,
+      "text": "What ZedgeHost Does"
+    },
+    {
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "ZedgeHost is a web hosting company for Pakistan's businesses, startups, freelancers and creators. Customers buy hosting and domain services directly from our website, zedgehost.com, and manage them online through their client area and cPanel. We sell shared hosting, WordPress hosting, cloud hosting, VPS hosting, dedicated servers, domain registration (including .pk domains), SSL certificates, business email, and website security and backup services. Shared hosting plans start at Rs 1,499 per year, and all prices on our plan pages are shown in PKR."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "Every shared and WordPress hosting plan includes free SSL certificates, free cPanel, daily backups and free website migration, with 24/7 expert support. Shared hosting plans also carry a 30-day money-back guarantee. Full plan details, prices and refund terms are on the plan pages and in our "
+        },
+        {
+          "text": "Refund Policy",
+          "href": "refund-policy.html"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "text": "Your Customer Journey, Step by Step"
+    },
+    {
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "Step 1 — Choose a plan.",
+          "strong": true
+        },
+        {
+          "text": " Browse the hosting plans on zedgehost.com and pick the one that fits your website: Starter for a single website, Standard for a few websites, Business for larger sites, or Enterprise for unlimited websites. Each plan page lists exactly what is included — websites, NVMe storage and features — and its yearly price."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "Step 2 — Choose a domain.",
+          "strong": true
+        },
+        {
+          "text": " During checkout you either register a new domain, transfer an existing domain to us, or use a domain you already own elsewhere. Domain search and registration are available on our domain pages, including .pk domain registration."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "Step 3 — Review your order and create your account.",
+          "strong": true
+        },
+        {
+          "text": " You review your cart, confirm your plan and billing period, and create your client-area account. Your orders, invoices and services all live in that account afterwards."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "Step 4 — Pay securely at checkout.",
+          "strong": true
+        },
+        {
+          "text": " You pay for your order at checkout through our payment gateway — see \"How Payments Work\" below. Once payment is confirmed, your invoice is issued in your client area."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "Step 5 — Your service is set up.",
+          "strong": true
+        },
+        {
+          "text": " After payment confirmation, your hosting service is provisioned and your login details are emailed to you. You can then log in to your client area and cPanel to upload your website, create email accounts, install WordPress and manage your domain."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "Step 6 — Manage and get support.",
+          "strong": true
+        },
+        {
+          "text": " You manage everything from your client area: renewals, upgrades, invoices and support tickets. Our knowledge base covers common tasks step by step, and our support team is available 24/7 through the contact and support pages."
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "text": "How Payments Work (Payment Gateway Use Case)"
+    },
+    {
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "ZedgeHost uses a payment gateway to accept online payments at checkout for hosting, domain and related service orders placed on zedgehost.com. This is the intended and only use of the payment gateway: it processes a customer's payment for an order during the checkout process. It is not used for any other purpose."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "During checkout, the customer selects a payment method — Easypaisa, JazzCash, or a debit/credit card (Visa/Mastercard) — and completes the payment on the secure gateway page. The gateway confirms the payment to our system, the order invoice is marked accordingly in the customer's client area, and only then is the hosting service provisioned. Card and mobile-wallet details are entered on the secure gateway page and are processed by the gateway; ZedgeHost does not store your card numbers or wallet credentials on its own servers."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "Payments are accepted in PKR for customers in Pakistan, which is why local methods such as Easypaisa and JazzCash are offered alongside debit and credit cards. If a payment fails or is cancelled at the gateway, no service is provisioned and the customer can retry checkout or contact support."
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "text": "Our Business Address"
+    },
+    {
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "ZedgeHost's business address is Chak 75 A SB, Lokri, Sargodha, Punjab, Pakistan. You can reach us by email at "
+        },
+        {
+          "text": "support@zedgehost.com",
+          "href": "mailto:support@zedgehost.com"
+        },
+        {
+          "text": " or by phone at "
+        },
+        {
+          "text": "+92 305 4380315",
+          "href": "tel:+923054380315"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "text": "Questions About Ordering"
+    },
+    {
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "Do I need a domain before I buy hosting?",
+          "strong": true
+        },
+        {
+          "text": " No. You can register a new domain during checkout, transfer an existing one, or start with a domain you already own."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "How long does setup take after payment?",
+          "strong": true
+        },
+        {
+          "text": " Your service is provisioned after your gateway payment is confirmed, and your login details are emailed to you."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "What if I need help?",
+          "strong": true
+        },
+        {
+          "text": " Email us at "
+        },
+        {
+          "text": "support@zedgehost.com",
+          "href": "mailto:support@zedgehost.com"
+        },
+        {
+          "text": ", call "
+        },
+        {
+          "text": "+92 305 4380315",
+          "href": "tel:+923054380315"
+        },
+        {
+          "text": ", or reach us through the "
+        },
+        {
+          "text": "Contact us",
+          "href": "https://my.zedgehost.com/contact.php"
+        },
+        {
+          "text": " page. Our knowledge base also has step-by-step guides for common tasks."
+        }
+      ]
+    }
+  ]
+}

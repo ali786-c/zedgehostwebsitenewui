@@ -1,0 +1,187 @@
+{
+  "slug": "policy",
+  "output": "policy.html",
+  "title": "ZedgeHost - Privacy Policy",
+  "description": "Review the privacy policy and service terms for Zedgehost Pakistan hosting and domain solutions.",
+  "canonical": "https://zedgehost.com/policy.html",
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+  "h1": "Privacy Policy",
+  "schema": [
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Zedgehost Pakistan",
+        "url": "https://zedgehost.com/",
+        "logo": "https://zedgehost.com/assets/img/logo.png",
+        "description": "Web hosting, domain registration, VPS, cloud hosting, business email, and website security services in Pakistan.",
+        "areaServed": "Pakistan",
+        "sameAs": [
+          "https://zedgehost.com/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Privacy Policy Zedgehost Pakistan",
+        "provider": {
+          "@type": "Organization",
+          "name": "Zedgehost Pakistan",
+          "url": "https://zedgehost.com/"
+        },
+        "areaServed": "Pakistan",
+        "url": "https://zedgehost.com/policy.html",
+        "description": "Review the privacy policy and service terms for Zedgehost Pakistan hosting and domain solutions."
+      }
+    ]
+  ],
+  "lead": [
+    {
+      "text": "Review the Privacy Policy of Zedgehost. Learn how we securely collect, use, and protect your personal and website data across all our hosting services."
+    }
+  ],
+  "blocks": [
+    {
+      "kind": "heading",
+      "level": 2,
+      "text": "1. Introduction to Zedgehost Privacy Policy"
+    },
+    {
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "At Zedgehost (\"we\", \"our\", or \"us\"), your privacy is our top priority. We are committed to protecting your personal information and ensuring that your web hosting, domain registration, and cloud services experience is secure. This Privacy Policy outlines how we collect, use, and protect your data when you visit zedgehost.com or use our hosting services."
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "text": "2. Information We Collect"
+    },
+    {
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "When you sign up for Zedgehost web hosting or domain services, we may collect the following information:"
+        }
+      ]
+    },
+    {
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "text": "Personal Information:",
+            "strong": true
+          },
+          {
+            "text": " Name, email address, phone number, and billing address."
+          }
+        ],
+        [
+          {
+            "text": "Payment Information:",
+            "strong": true
+          },
+          {
+            "text": " Credit card details, PayPal, or local payment gateways (e.g., JazzCash, EasyPaisa, Bank Transfer) used for purchasing our services."
+          }
+        ],
+        [
+          {
+            "text": "Technical Data:",
+            "strong": true
+          },
+          {
+            "text": " IP addresses, browser types, and usage data to help us optimize server performance and troubleshoot issues on your VPS or shared hosting accounts."
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "text": "3. How We Use Your Information"
+    },
+    {
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "Zedgehost uses the collected data to:"
+        }
+      ]
+    },
+    {
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "text": "Provision and manage your web hosting, domain, and server accounts."
+          }
+        ],
+        [
+          {
+            "text": "Process payments and send billing notices."
+          }
+        ],
+        [
+          {
+            "text": "Provide 24/7 technical support and customer service."
+          }
+        ],
+        [
+          {
+            "text": "Enhance our server security and prevent fraudulent activities."
+          }
+        ],
+        [
+          {
+            "text": "Send you important updates regarding server maintenance or Zedgehost promotional offers."
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "text": "4. Data Security and Protection"
+    },
+    {
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "Zedgehost employs industry-standard security measures, including SSL encryption, DDoS protection, and regular server backups, to protect your personal and website data against unauthorized access, alteration, or destruction. We do not sell or rent your personal information to third parties."
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "text": "5. Your Rights"
+    },
+    {
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "You have the right to access, update, or request the deletion of your personal data stored with Zedgehost. You can manage your account details via the Zedgehost Client Area. For any privacy-related queries, you can contact our support team."
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "text": "6. Changes to This Policy"
+    },
+    {
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "Zedgehost reserves the right to update this Privacy Policy at any time. Any changes will be posted on this page, and your continued use of Zedgehost services constitutes your acceptance of the revised policy."
+        }
+      ]
+    }
+  ]
+}

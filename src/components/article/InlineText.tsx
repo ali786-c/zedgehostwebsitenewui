@@ -1,6 +1,6 @@
 import type { ArticleInline } from '../../content/types';
 
-/** Renders inline article runs (text, links, emphasis) without any HTML strings. */
+/** Renders inline article runs (text, links, emphasis, inline code) without HTML strings. */
 export function InlineText({ runs }: { runs: ArticleInline[] }) {
   return (
     <>
@@ -13,6 +13,7 @@ export function InlineText({ runs }: { runs: ArticleInline[] }) {
             </a>
           );
         }
+        if (run.code) return <code key={key}>{run.text}</code>;
         if (run.strong) return <strong key={key}>{run.text}</strong>;
         return <span key={key}>{run.text}</span>;
       })}

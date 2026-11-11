@@ -1,0 +1,152 @@
+{
+  "slug": "legal",
+  "output": "legal.html",
+  "title": "ZedgeHost - Terms and Conditions",
+  "description": "Read the legal information, service terms, and policy details for Zedgehost Pakistan.",
+  "canonical": "https://zedgehost.com/legal.html",
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+  "h1": "Terms and Conditions",
+  "schema": [
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Zedgehost Pakistan",
+        "url": "https://zedgehost.com/",
+        "logo": "https://zedgehost.com/assets/img/logo.png",
+        "description": "Web hosting, domain registration, VPS, cloud hosting, business email, and website security services in Pakistan.",
+        "areaServed": "Pakistan",
+        "sameAs": [
+          "https://zedgehost.com/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Legal Information Zedgehost Pakistan",
+        "provider": {
+          "@type": "Organization",
+          "name": "Zedgehost Pakistan",
+          "url": "https://zedgehost.com/"
+        },
+        "areaServed": "Pakistan",
+        "url": "https://zedgehost.com/legal.html",
+        "description": "Read the legal information, service terms, and policy details for Zedgehost Pakistan."
+      }
+    ]
+  ],
+  "lead": [
+    {
+      "text": "Read the Zedgehost Terms of Service. These legal agreements outline your rights, responsibilities, and our acceptable use policies for web hosting and domain services."
+    }
+  ],
+  "blocks": [
+    {
+      "kind": "heading",
+      "level": 2,
+      "text": "1. Zedgehost Terms of Service"
+    },
+    {
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "Welcome to Zedgehost! These Terms and Conditions govern your use of zedgehost.com and the web hosting, domain registration, VPS, and dedicated server services provided by Zedgehost. By signing up for any Zedgehost service, you agree to comply with these terms."
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "text": "2. Account Registration and Responsibility"
+    },
+    {
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "You must provide accurate and up-to-date information when registering an account with Zedgehost. You are responsible for maintaining the security of your account login credentials. Zedgehost is not liable for any loss or damage arising from unauthorized access to your hosting account."
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "text": "3. Acceptable Use Policy (AUP)"
+    },
+    {
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "Zedgehost provides reliable hosting services for legitimate purposes. You agree NOT to use our servers for:"
+        }
+      ]
+    },
+    {
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "text": "Hosting illegal content, malware, phishing sites, or pirated software."
+          }
+        ],
+        [
+          {
+            "text": "Sending spam, unsolicited bulk emails, or participating in DDoS attacks."
+          }
+        ],
+        [
+          {
+            "text": "Running resource-intensive scripts that degrade the performance of our shared hosting environment."
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "Violation of this AUP may result in immediate suspension or termination of your Zedgehost account without a refund."
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "text": "4. Payments and Renewals"
+    },
+    {
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "All Zedgehost services are billed on a recurring basis. Invoices are generated before the renewal date. Failure to pay on time will result in service suspension. Domain names must be renewed before expiration to avoid loss, and Zedgehost is not responsible for expired domains due to non-payment."
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "text": "5. Data Backup and Loss"
+    },
+    {
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "While Zedgehost performs regular server backups for our internal disaster recovery, you are solely responsible for maintaining your own independent backups of your website data, databases, and emails. Zedgehost is not liable for any data loss or corruption."
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "text": "6. Limitation of Liability"
+    },
+    {
+      "kind": "paragraph",
+      "content": [
+        {
+          "text": "Zedgehost strives for 99.9% uptime, but we do not guarantee uninterrupted service. Zedgehost will not be liable for any indirect, incidental, or consequential damages, including loss of profits or data, arising from the use or inability to use our hosting services."
+        }
+      ]
+    }
+  ]
+}

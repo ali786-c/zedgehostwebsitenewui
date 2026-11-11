@@ -10,7 +10,7 @@ export function FeatureGrid({ features }: { features: Feature[] }) {
             <Icon name={feature.icon} size={23} />
           </span>
           <h3>{feature.title}</h3>
-          <p>{feature.text}</p>
+          {feature.text && <p>{feature.text}</p>}
         </article>
       ))}
     </div>

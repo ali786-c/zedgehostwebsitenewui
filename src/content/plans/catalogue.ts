@@ -19,6 +19,11 @@ const note = 'Renews at Rs 2,203 /mo for 2 years. Cancel anytime.';
  * Plan set displayed on the catalogue pages that shared one generic pricing block
  * in the legacy site (reseller, Windows reseller, email, SiteLock, backup, SSL).
  */
+/** Same plan set, but with the page's own order link. */
+export function cataloguePlansWith(ctaHref: string): Plan[] {
+  return cataloguePlans.map((plan) => ({ ...plan, ctaHref }));
+}
+
 export const cataloguePlans: Plan[] = [
   {
     name: 'Basic',

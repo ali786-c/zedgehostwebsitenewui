@@ -44,13 +44,20 @@ interface PageReport {
 }
 
 function decodeEntities(value: string): string {
-  return value
-    .replace(/&amp;/g, '&')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"')
-    .replace(/&#0?39;/g, "'")
-    .replace(/&nbsp;/g, ' ');
+  return (
+    value
+      // React escapes apostrophes as `&#x27;`; legacy markup keeps them literal.
+      .replace(/&#x([0-9a-f]+);/gi, (_match, hex: string) =>
+        String.fromCodePoint(Number.parseInt(hex, 16)),
+      )
+      .replace(/&#(\d+);/g, (_match, dec: string) => String.fromCodePoint(Number(dec)))
+      .replace(/&amp;/g, '&')
+      .replace(/&lt;/g, '<')
+      .replace(/&gt;/g, '>')
+      .replace(/&quot;/g, '"')
+      .replace(/&#0?39;/g, "'")
+      .replace(/&nbsp;/g, ' ')
+  );
 }
 
 function normalizeText(value: string): string {
@@ -68,10 +75,7 @@ function extractHead(html: string): Omit<Extracted, 'links' | 'schema'> {
     html,
     /<meta[^>]+name=["']description["'][^>]*content=["']([^"']*)["']/i,
   );
-  const canonical = matchFirst(
-    html,
-    /<link[^>]+rel=["']canonical["'][^>]*href=["']([^"']*)["']/i,
-  );
+  const canonical = matchFirst(html, /<link[^>]+rel=["']canonical["'][^>]*href=["']([^"']*)["']/i);
   const robots = matchFirst(html, /<meta[^>]+name=["']robots["'][^>]*content=["']([^"']*)["']/i);
 
   const h1: string[] = [];
@@ -162,7 +166,9 @@ function comparePage(page: string, legacy: Extracted, current: Extracted): PageR
   const assertEqual = (label: string, expected: string, actual: string): void => {
     checks += 1;
     if (expected !== actual) {
-      failures.push(`${label} differs\n    legacy: ${expected || '(empty)'}\n    new:    ${actual || '(empty)'}`);
+      failures.push(
+        `${label} differs\n    legacy: ${expected || '(empty)'}\n    new:    ${actual || '(empty)'}`,
+      );
     }
   };
 
@@ -181,7 +187,9 @@ function comparePage(page: string, legacy: Extracted, current: Extracted): PageR
   checks += 1;
   const missingSchema = legacy.schema.filter((block) => !current.schema.includes(block));
   if (missingSchema.length > 0) {
-    failures.push(`JSON-LD blocks missing or changed (${missingSchema.length} of ${legacy.schema.length})`);
+    failures.push(
+      `JSON-LD blocks missing or changed (${missingSchema.length} of ${legacy.schema.length})`,
+    );
     for (const block of missingSchema.slice(0, 3)) {
       failures.push(`  - ${block.slice(0, 160)}...`);
     }
@@ -213,7 +221,9 @@ async function main(): Promise<void> {
     } catch (error) {
       reports.push({
         page: route.output,
-        failures: [`could not read page: ${error instanceof Error ? error.message : String(error)}`],
+        failures: [
+          `could not read page: ${error instanceof Error ? error.message : String(error)}`,
+        ],
         checks: 1,
       });
       continue;

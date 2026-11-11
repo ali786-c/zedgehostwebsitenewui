@@ -5,11 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run typecheck && vite build && tsx scripts/prerender.ts && tsx scripts/seo-parity.ts",
+    "build": "npm run typecheck && vite build && tsx scripts/prerender.ts && tsx scripts/seo-parity.ts && tsx scripts/coverage.ts",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "test": "vitest run",
     "parity": "tsx scripts/seo-parity.ts",
+    "coverage": "tsx scripts/coverage.ts",
     "preview": "vite preview --port 4173"
   },
   "dependencies": {
