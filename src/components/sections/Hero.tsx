@@ -29,14 +29,12 @@ export function Hero({ data }: { data: HeroData }) {
             )}
 
             <div className="zh-hero__actions">
-              <Button
-                href={data.primaryCta.href}
-                variant="primary"
-                size="lg"
-              >
-                {data.primaryCta.label}
-                <Icon name="arrow-right" size={18} />
-              </Button>
+              {data.primaryCta && (
+                <Button href={data.primaryCta.href} variant="primary" size="lg">
+                  {data.primaryCta.label}
+                  <Icon name="arrow-right" size={18} />
+                </Button>
+              )}
               {data.secondaryCta && (
                 <Button
                   href={data.secondaryCta.href}
@@ -50,7 +48,9 @@ export function Hero({ data }: { data: HeroData }) {
 
             {data.showDomainSearch && (
               <div className="zh-hero__search">
-                <p className="zh-hero__search-label">Search &amp; register your domain name</p>
+                <p className="zh-hero__search-label">
+                  {data.searchLabel ?? 'Search & register your domain name'}
+                </p>
                 <DomainSearch />
               </div>
             )}

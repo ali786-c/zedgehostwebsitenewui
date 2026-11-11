@@ -23,10 +23,12 @@ export interface HeroData {
   priceSuffix?: string;
   ticks?: string[];
   chips?: { icon: IconName; label: string }[];
-  primaryCta: Cta;
+  primaryCta?: Cta;
   secondaryCta?: Cta;
   image: { src: string; alt: string };
   showDomainSearch?: boolean;
+  /** Helper line above the domain search form (legacy pages word it differently). */
+  searchLabel?: string;
   variant?: 'light' | 'dark';
 }
 
@@ -136,6 +138,23 @@ export interface SpecsSectionData {
   rows: { label: string; value: string }[];
 }
 
+export interface TldTableSectionData {
+  eyebrow?: string;
+  title: string;
+  subtitle?: string;
+  columns: string[];
+  rows: { tld: string; values: string[] }[];
+}
+
+export interface BulkFormSectionData {
+  eyebrow?: string;
+  title: string;
+  subtitle?: string;
+  mode: 'register' | 'transfer';
+  /** Explanatory notes shown under the form (legacy page copy). */
+  notes?: string[];
+}
+
 export type ProductSection =
   | { kind: 'split'; data: SplitSectionData }
   | {
@@ -150,7 +169,9 @@ export type ProductSection =
   | { kind: 'steps'; data: StepsSectionData }
   | { kind: 'specs'; data: SpecsSectionData }
   | { kind: 'groups'; data: GroupsSectionData }
-  | { kind: 'prose'; data: ProseSectionData };
+  | { kind: 'prose'; data: ProseSectionData }
+  | { kind: 'tld-table'; data: TldTableSectionData }
+  | { kind: 'bulk-form'; data: BulkFormSectionData };
 
 export interface FaqSectionData {
   title: string;
@@ -163,7 +184,8 @@ export interface FaqSectionData {
 export interface ProductPageData {
   seo: SeoData;
   hero: HeroData;
-  plans: PlanSectionData;
+  /** Omitted on domain pages that have no hosting plan grid. */
+  plans?: PlanSectionData;
   sections: ProductSection[];
   cta: CtaBandData;
   /** Omitted on pages that have no FAQ section. */

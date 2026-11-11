@@ -869,3 +869,218 @@
   color: var(--zh-muted);
   line-height: 1.75;
 }
+
+/* ---------- TLD pricing table ---------- */
+.zh-tlds__scroll {
+  overflow-x: auto;
+  border: 1px solid var(--zh-border);
+  border-radius: var(--zh-radius-lg);
+  background: var(--zh-surface);
+  box-shadow: var(--zh-shadow-sm);
+}
+
+.zh-tlds {
+  width: 100%;
+  min-width: 560px;
+  border-collapse: collapse;
+}
+
+.zh-tlds th,
+.zh-tlds td {
+  padding: 16px 22px;
+  text-align: left;
+  border-bottom: 1px solid var(--zh-border);
+  font-size: var(--zh-fs-sm);
+}
+
+.zh-tlds thead th {
+  background: var(--zh-mint);
+  color: var(--zh-deep);
+  font-size: var(--zh-fs-base);
+  font-weight: 700;
+}
+
+.zh-tlds tbody th {
+  color: var(--zh-deep);
+  font-size: var(--zh-fs-lg);
+  font-weight: 700;
+}
+
+.zh-tlds tbody tr:last-child th,
+.zh-tlds tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+@media (max-width: 700px) {
+  .zh-tlds__scroll {
+    overflow: visible;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .zh-tlds {
+    min-width: 0;
+    border-collapse: separate;
+    border-spacing: 0 var(--zh-space-3);
+  }
+
+  .zh-tlds thead {
+    display: none;
+  }
+
+  .zh-tlds,
+  .zh-tlds tbody,
+  .zh-tlds tr,
+  .zh-tlds th,
+  .zh-tlds td {
+    display: block;
+    width: 100%;
+  }
+
+  .zh-tlds tr {
+    padding: var(--zh-space-4) var(--zh-space-5);
+    background: var(--zh-surface);
+    border: 1px solid var(--zh-border);
+    border-radius: var(--zh-radius);
+    box-shadow: var(--zh-shadow-sm);
+  }
+
+  .zh-tlds tbody th,
+  .zh-tlds tbody td {
+    padding: 0;
+    border: 0;
+  }
+
+  .zh-tlds tbody th {
+    margin-bottom: var(--zh-space-2);
+    font-size: var(--zh-fs-xl);
+  }
+
+  .zh-tlds tbody td {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--zh-space-4);
+    padding: 7px 0;
+    border-top: 1px solid var(--zh-border);
+  }
+
+  .zh-tlds tbody td::before {
+    content: attr(data-label);
+    color: var(--zh-muted);
+    font-size: var(--zh-fs-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+}
+
+/* ---------- Bulk domain form ---------- */
+.zh-bulk {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: var(--zh-space-5);
+  align-items: start;
+}
+
+.zh-bulk__form {
+  display: grid;
+  gap: var(--zh-space-3);
+  padding: var(--zh-space-5);
+  background: var(--zh-surface);
+  border: 1px solid var(--zh-border);
+  border-radius: var(--zh-radius-lg);
+  box-shadow: var(--zh-shadow-sm);
+}
+
+.zh-bulk__form label {
+  font-size: var(--zh-fs-sm);
+  font-weight: 600;
+  color: var(--zh-ink);
+}
+
+.zh-bulk__form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid var(--zh-border);
+  border-radius: var(--zh-radius-sm);
+  background: var(--zh-bg);
+  color: var(--zh-ink);
+  font: inherit;
+  font-size: var(--zh-fs-sm);
+  line-height: 1.6;
+  resize: vertical;
+}
+
+.zh-bulk__form textarea:focus-visible {
+  outline: 2px solid var(--zh-green);
+  outline-offset: 1px;
+}
+
+.zh-bulk__file {
+  display: grid;
+  gap: 6px;
+}
+
+.zh-bulk__file label {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--zh-green-dark);
+}
+
+.zh-bulk__file input {
+  font-size: var(--zh-fs-sm);
+  color: var(--zh-muted);
+}
+
+.zh-bulk__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--zh-space-3);
+  margin-top: var(--zh-space-1);
+}
+
+.zh-bulk__count {
+  color: var(--zh-muted);
+  font-size: var(--zh-fs-sm);
+}
+
+.zh-bulk__upload {
+  color: var(--zh-green-dark);
+  font-size: var(--zh-fs-sm);
+}
+
+.zh-bulk__notes {
+  padding: var(--zh-space-5);
+  background: var(--zh-mint);
+  border: 1px solid var(--zh-border);
+  border-radius: var(--zh-radius-lg);
+}
+
+.zh-bulk__notes h3 {
+  margin-bottom: var(--zh-space-3);
+  font-size: var(--zh-fs-lg);
+}
+
+.zh-bulk__notes .zh-checklist {
+  margin-top: 0;
+}
+
+.zh-bulk__notes li {
+  font-size: var(--zh-fs-sm);
+}
+
+@media (max-width: 900px) {
+  .zh-bulk {
+    grid-template-columns: 1fr;
+  }
+}
+
+.zh-bulk > * {
+  min-width: 0;
+}
+
+.zh-bulk__notes li {
+  overflow-wrap: anywhere;
+}

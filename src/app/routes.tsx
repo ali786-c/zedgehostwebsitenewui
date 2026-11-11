@@ -4,6 +4,15 @@ import { AboutPage } from '../pages/AboutPage';
 import { HomePage } from '../pages/HomePage';
 import {
   BasicVpsPage,
+  BulkRegisterPage,
+  BulkTransferPage,
+  DomainPromosPage,
+  DomainSearchPage,
+  DomainTransferPage,
+  FreeGtldsPage,
+  NameSuggestionPage,
+  NewGtldsPage,
+  PremiumDomainPage,
   BusinessEmailPage,
   CloudHostingPage,
   DedicatedServerPage,
@@ -60,6 +69,15 @@ export const routes: RouteDefinition[] = [
   productRoute('siteLock.html', SiteLockPage, seo.siteLock),
   productRoute('website-backup.html', WebsiteBackupPage, seo.websiteBackup),
   productRoute('digicert-certificate.html', DigicertPage, seo.digicert),
+  productRoute('domain-search.html', DomainSearchPage, seo.domainSearch),
+  productRoute('domain-transfer.html', DomainTransferPage, seo.domainTransfer),
+  productRoute('premium-domain.html', PremiumDomainPage, seo.premiumDomain),
+  productRoute('new-gtlds.html', NewGtldsPage, seo.newGtlds),
+  productRoute('free-gtlds.html', FreeGtldsPage, seo.freeGtlds),
+  productRoute('domain-promos.html', DomainPromosPage, seo.domainPromos),
+  productRoute('bulk-transfer.html', BulkTransferPage, seo.bulkTransfer),
+  productRoute('domain-bulk-register.html', BulkRegisterPage, seo.bulkRegister),
+  productRoute('domain-name-suggestion.html', NameSuggestionPage, seo.domainSuggestion),
 ];
 
 export function getRoute(key: string): RouteDefinition | undefined {

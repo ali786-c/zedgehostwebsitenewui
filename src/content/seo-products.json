@@ -1271,5 +1271,465 @@
         }
       ]
     ]
+  },
+  "domain-search": {
+    "title": "Domain Registration Pakistan | Buy .PK & .COM Domains - ZedgeHost",
+    "description": "Register .pk, .com.pk, and .com domains in Pakistan at lowest PKR rates with instant activation and DNS control.",
+    "canonical": "https://zedgehost.com/domain-search.html",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "h1": [
+      "Instant Domain Registration in Pakistan (.PK & Top TLDs)"
+    ],
+    "schema": [
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://zedgehost.com/#organization",
+          "name": "Zedgehost Pakistan",
+          "legalName": "Zedgehost Web Hosting & Domain Services",
+          "url": "https://zedgehost.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://zedgehost.com/assets/img/logo.png"
+          },
+          "image": "https://zedgehost.com/assets/img/logo.png",
+          "description": "Zedgehost is a leading domain registration and web hosting provider in Pakistan offering .PK, .COM.PK, and top TLD domain registration with instant activation and PKR payment support.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "PK",
+            "addressLocality": "Pakistan"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Pakistan"
+          },
+          "currenciesAccepted": "PKR",
+          "paymentAccepted": "Easypaisa, JazzCash, Raast Pay, Bank Transfer, Credit Card, Debit Card",
+          "sameAs": [
+            "https://zedgehost.com/"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "@id": "https://zedgehost.com/domain-search.html#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://zedgehost.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Domain Registration Pakistan",
+              "item": "https://zedgehost.com/domain-search.html"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "@id": "https://zedgehost.com/domain-search.html#service",
+          "serviceType": "Domain Registration in Pakistan",
+          "name": "Domain Registration Pakistan (.PK & Top TLDs)",
+          "provider": {
+            "@id": "https://zedgehost.com/#organization"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Pakistan"
+          },
+          "url": "https://zedgehost.com/domain-search.html",
+          "description": "Register .pk, .com.pk, and .com domains in Pakistan at lowest PKR rates with instant activation, DNS control, and local PKR payment options (Easypaisa, JazzCash, Raast).",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Domain Extensions in Pakistan",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": ".PK Domain Registration",
+                  "description": "Official Pakistani country code top-level domain registration with 2-year validity."
+                },
+                "priceCurrency": "PKR"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": ".COM Domain Registration",
+                  "description": "Global commercial domain registration in Pakistan with instant activation."
+                },
+                "priceCurrency": "PKR"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": ".COM.PK Domain Registration",
+                  "description": "Popular commercial domain extension for businesses operating in Pakistan."
+                },
+                "priceCurrency": "PKR"
+              }
+            ]
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "@id": "https://zedgehost.com/domain-search.html#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Where can I register a domain in Pakistan?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Zedgehost provides instant domain registration in Pakistan for popular extensions including .pk, .com.pk, .com, .net, .org, and .biz with easy management tools."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How can I pay for a .PK domain in Pakistan?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can pay for your .PK domain registration directly in PKR using local Pakistani payment options like Easypaisa, JazzCash, Raast, and local bank transfers."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between .COM and .PK domains?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": ".COM is the global standard for international commercial websites, while .PK and .COM.PK give local target audience relevance and higher trust for Pakistani customers on Google.com.pk."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I manage DNS and domain settings easily?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, every domain registered with Zedgehost includes an intuitive control panel with full DNS management, name server updates, domain forwarding, and contact privacy tools."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I buy domain registration and web hosting together?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes! Zedgehost allows you to search, register, and seamlessly pair your domain with cheap shared, WordPress, or VPS hosting plans."
+              }
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "domain-transfer": {
+    "title": "Domain Transfer in Pakistan | Move Your Domain with Ease",
+    "description": "Transfer your domain to Zedgehost Pakistan with a simple process, expert support, and reliable hosting management for your website or business.",
+    "canonical": "https://zedgehost.com/domain-transfer.html",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "h1": [
+      "Transfer Your Domain to Zedgehost Pakistan"
+    ],
+    "schema": [
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Zedgehost Pakistan",
+          "url": "https://zedgehost.com/",
+          "logo": "https://zedgehost.com/assets/img/logo.png",
+          "description": "Web hosting, domain registration, VPS, cloud hosting, business email, and website security services in Pakistan.",
+          "areaServed": "Pakistan",
+          "sameAs": [
+            "https://zedgehost.com/"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Domain Transfer in Pakistan",
+          "provider": {
+            "@type": "Organization",
+            "name": "Zedgehost Pakistan",
+            "url": "https://zedgehost.com/"
+          },
+          "areaServed": "Pakistan",
+          "url": "https://zedgehost.com/domain-transfer.html",
+          "description": "Transfer domains to Zedgehost in Pakistan with a simple process and reliable support."
+        }
+      ]
+    ]
+  },
+  "premium-domain": {
+    "title": "Premium Domain Names in Pakistan | Buy Valuable Brand Domains",
+    "description": "Buy premium domain names in Pakistan for stronger brand positioning, better trust, and a more memorable online presence for your business.",
+    "canonical": "https://zedgehost.com/premium-domain.html",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "h1": [
+      "Premium Domain Names for Pakistani Businesses"
+    ],
+    "schema": [
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Zedgehost Pakistan",
+          "url": "https://zedgehost.com/",
+          "logo": "https://zedgehost.com/assets/img/logo.png",
+          "description": "Web hosting, domain registration, VPS, cloud hosting, business email, and website security services in Pakistan.",
+          "areaServed": "Pakistan",
+          "sameAs": [
+            "https://zedgehost.com/"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Premium Domains in Pakistan",
+          "provider": {
+            "@type": "Organization",
+            "name": "Zedgehost Pakistan",
+            "url": "https://zedgehost.com/"
+          },
+          "areaServed": "Pakistan",
+          "url": "https://zedgehost.com/premium-domain.html",
+          "description": "Find premium domain names in Pakistan for valuable brand positioning and business growth."
+        }
+      ]
+    ]
+  },
+  "new-gtlds": {
+    "title": "New GTLDs in Pakistan | Pre-Register Modern Domain Extensions",
+    "description": "Pre-register the latest domain extensions in Pakistan and secure a stronger, more memorable online identity for your business or personal brand.",
+    "canonical": "https://zedgehost.com/new-gtlds.html",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "h1": [
+      "Get a Domain Extension That Fits Your Brand"
+    ],
+    "schema": [
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Zedgehost Pakistan",
+          "url": "https://zedgehost.com/",
+          "logo": "https://zedgehost.com/assets/img/logo.png",
+          "description": "Web hosting, domain registration, VPS, cloud hosting, business email, and website security services in Pakistan.",
+          "areaServed": "Pakistan",
+          "sameAs": [
+            "https://zedgehost.com/"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "New GTLDs in Pakistan",
+          "provider": {
+            "@type": "Organization",
+            "name": "Zedgehost Pakistan",
+            "url": "https://zedgehost.com/"
+          },
+          "areaServed": "Pakistan",
+          "url": "https://zedgehost.com/new-gtlds.html",
+          "description": "Discover the latest domain extensions in Pakistan for stronger online branding."
+        }
+      ]
+    ]
+  },
+  "free-gtlds": {
+    "title": "Free GTLDs in Pakistan | Modern Domain Extensions",
+    "description": "Explore modern free and affordable GTLD options in Pakistan for more memorable branding, business growth, and a stronger online presence.",
+    "canonical": "https://zedgehost.com/free-gtlds.html",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "h1": [
+      "Modern Domain Extensions for Your Brand in Pakistan"
+    ],
+    "schema": [
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Zedgehost Pakistan",
+          "url": "https://zedgehost.com/",
+          "logo": "https://zedgehost.com/assets/img/logo.png",
+          "description": "Web hosting, domain registration, VPS, cloud hosting, business email, and website security services in Pakistan.",
+          "areaServed": "Pakistan",
+          "sameAs": [
+            "https://zedgehost.com/"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Free GTLDs in Pakistan",
+          "provider": {
+            "@type": "Organization",
+            "name": "Zedgehost Pakistan",
+            "url": "https://zedgehost.com/"
+          },
+          "areaServed": "Pakistan",
+          "url": "https://zedgehost.com/free-gtlds.html",
+          "description": "Explore free and affordable GTLD options in Pakistan for modern domain branding."
+        }
+      ]
+    ]
+  },
+  "domain-promos": {
+    "title": "Domain Deals in Pakistan | Cheap Domain Registration Offers",
+    "description": "Find the latest domain deals in Pakistan for affordable .com, .pk, and other TLD registrations with great value for businesses and startups.",
+    "canonical": "https://zedgehost.com/domain-promos.html",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "h1": [
+      "Latest Domain Deals in Pakistan"
+    ],
+    "schema": [
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Zedgehost Pakistan",
+          "url": "https://zedgehost.com/",
+          "logo": "https://zedgehost.com/assets/img/logo.png",
+          "description": "Web hosting, domain registration, VPS, cloud hosting, business email, and website security services in Pakistan.",
+          "areaServed": "Pakistan",
+          "sameAs": [
+            "https://zedgehost.com/"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Domain Promos in Pakistan",
+          "provider": {
+            "@type": "Organization",
+            "name": "Zedgehost Pakistan",
+            "url": "https://zedgehost.com/"
+          },
+          "areaServed": "Pakistan",
+          "url": "https://zedgehost.com/domain-promos.html",
+          "description": "Check the latest domain promos in Pakistan for affordable deals on .com, .pk, and more."
+        }
+      ]
+    ]
+  },
+  "bulk-transfer": {
+    "title": "Bulk Domain Transfer in Pakistan | Transfer Multiple Domains Securely",
+    "description": "Transfer multiple domains in Pakistan securely with expert migration support, DNS help, and business-friendly pricing for growing brands.",
+    "canonical": "https://zedgehost.com/bulk-transfer.html",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "h1": [
+      "Bulk Domain Transfer in Pakistan"
+    ],
+    "schema": [
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Zedgehost Pakistan",
+          "url": "https://zedgehost.com/",
+          "logo": "https://zedgehost.com/assets/img/logo.png",
+          "description": "Web hosting, domain registration, VPS, cloud hosting, business email, and website security services in Pakistan.",
+          "areaServed": "Pakistan",
+          "sameAs": [
+            "https://zedgehost.com/"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Bulk Domain Transfer in Pakistan",
+          "provider": {
+            "@type": "Organization",
+            "name": "Zedgehost Pakistan",
+            "url": "https://zedgehost.com/"
+          },
+          "areaServed": "Pakistan",
+          "url": "https://zedgehost.com/bulk-transfer.html",
+          "description": "Transfer multiple domains in Pakistan with secure migration and business-friendly domain support."
+        }
+      ]
+    ]
+  },
+  "domain-bulk-register": {
+    "title": "Bulk Domain Registration in Pakistan | Register Multiple Domains Fast",
+    "description": "Register multiple domains in Pakistan quickly with secure DNS, low-cost bulk pricing, and simple domain management for businesses and agencies.",
+    "canonical": "https://zedgehost.com/domain-bulk-register.html",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "h1": [
+      "Register Multiple Domains in Pakistan"
+    ],
+    "schema": [
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Zedgehost Pakistan",
+          "url": "https://zedgehost.com/",
+          "logo": "https://zedgehost.com/assets/img/logo.png",
+          "description": "Web hosting, domain registration, VPS, cloud hosting, business email, and website security services in Pakistan.",
+          "areaServed": "Pakistan",
+          "sameAs": [
+            "https://zedgehost.com/"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Bulk Domain Registration in Pakistan",
+          "provider": {
+            "@type": "Organization",
+            "name": "Zedgehost Pakistan",
+            "url": "https://zedgehost.com/"
+          },
+          "areaServed": "Pakistan",
+          "url": "https://zedgehost.com/domain-bulk-register.html",
+          "description": "Register multiple domains in Pakistan quickly with secure DNS and affordable bulk domain packages."
+        }
+      ]
+    ]
+  },
+  "domain-name-suggestion": {
+    "title": "Domain Name Ideas in Pakistan | Find a Strong Brand Name",
+    "description": "Generate smart domain name ideas in Pakistan for startups, businesses, blogs, and personal brands with a memorable online identity.",
+    "canonical": "https://zedgehost.com/domain-name-suggestion.html",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "h1": [
+      "Find the Right Domain Name for Your Business in Pakistan"
+    ],
+    "schema": [
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Zedgehost Pakistan",
+          "url": "https://zedgehost.com/",
+          "logo": "https://zedgehost.com/assets/img/logo.png",
+          "description": "Web hosting, domain registration, VPS, cloud hosting, business email, and website security services in Pakistan.",
+          "areaServed": "Pakistan",
+          "sameAs": [
+            "https://zedgehost.com/"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Domain Name Suggestion in Pakistan",
+          "provider": {
+            "@type": "Organization",
+            "name": "Zedgehost Pakistan",
+            "url": "https://zedgehost.com/"
+          },
+          "areaServed": "Pakistan",
+          "url": "https://zedgehost.com/domain-name-suggestion.html",
+          "description": "Generate domain name ideas in Pakistan for startups, businesses, and personal brands."
+        }
+      ]
+    ]
   }
 }

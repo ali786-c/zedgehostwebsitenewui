@@ -1,5 +1,6 @@
 import type { ProductPageData } from '../content/types';
 import { Layout } from '../components/layout/Layout';
+import { BulkDomainForm } from '../components/sections/BulkDomainForm';
 import { ComparisonTable } from '../components/sections/ComparisonTable';
 import { CtaBand } from '../components/sections/CtaBand';
 import { FAQSection } from '../components/sections/FAQSection';
@@ -11,6 +12,7 @@ import { ProseSection } from '../components/sections/ProseSection';
 import { SpecsSection } from '../components/sections/SpecsSection';
 import { SplitSection } from '../components/sections/SplitSection';
 import { StepsSection } from '../components/sections/StepsSection';
+import { TldTable } from '../components/sections/TldTable';
 import { Section } from '../components/ui/Section';
 
 /**
@@ -22,15 +24,17 @@ export function ProductPage({ data, currentPath }: { data: ProductPageData; curr
     <Layout currentPath={currentPath}>
       <Hero data={data.hero} />
 
-      <Section
-        id="plans"
-        center
-        eyebrow={data.plans.eyebrow}
-        title={data.plans.title}
-        subtitle={data.plans.subtitle}
-      >
-        <PlanGrid plans={data.plans.plans} note={data.plans.note} />
-      </Section>
+      {data.plans && (
+        <Section
+          id="plans"
+          center
+          eyebrow={data.plans.eyebrow}
+          title={data.plans.title}
+          subtitle={data.plans.subtitle}
+        >
+          <PlanGrid plans={data.plans.plans} note={data.plans.note} />
+        </Section>
+      )}
 
       {data.sections.map((section) => {
         switch (section.kind) {
@@ -50,7 +54,11 @@ export function ProductPage({ data, currentPath }: { data: ProductPageData; curr
             );
           case 'comparison':
             return (
-              <ComparisonTable key={section.data.title} data={section.data} plans={data.plans.plans} />
+              <ComparisonTable
+                key={section.data.title}
+                data={section.data}
+                plans={data.plans?.plans ?? []}
+              />
             );
           case 'steps':
             return <StepsSection key={section.data.title} data={section.data} />;
@@ -60,6 +68,10 @@ export function ProductPage({ data, currentPath }: { data: ProductPageData; curr
             return <GroupsSection key={section.data.title} data={section.data} />;
           case 'prose':
             return <ProseSection key={section.data.title} data={section.data} />;
+          case 'tld-table':
+            return <TldTable key={section.data.title} data={section.data} />;
+          case 'bulk-form':
+            return <BulkDomainForm key={section.data.title} data={section.data} />;
         }
       })}
 

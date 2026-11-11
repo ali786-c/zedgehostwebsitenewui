@@ -35,4 +35,13 @@ export const seo = {
   siteLock: requireSeo(products, 'siteLock'),
   websiteBackup: requireSeo(products, 'website-backup'),
   digicert: requireSeo(products, 'digicert-certificate'),
+  domainSearch: requireSeo(products, 'domain-search'),
+  domainTransfer: requireSeo(products, 'domain-transfer'),
+  premiumDomain: requireSeo(products, 'premium-domain'),
+  newGtlds: requireSeo(products, 'new-gtlds'),
+  freeGtlds: requireSeo(products, 'free-gtlds'),
+  domainPromos: requireSeo(products, 'domain-promos'),
+  bulkTransfer: requireSeo(products, 'bulk-transfer'),
+  bulkRegister: requireSeo(products, 'domain-bulk-register'),
+  domainSuggestion: requireSeo(products, 'domain-name-suggestion'),
 };

@@ -48,8 +48,14 @@ never import page data; pages never contain business logic.
    the legacy HTML) and expose it in `src/content/seo.ts`.
 2. Create `src/content/<product>.ts` exporting a `ProductPageData`: hero, plans,
    ordered `sections` (`split`, `features`, `comparison`, `steps`, `specs`,
-   `groups`, `prose`), CTA and optional FAQ. Reuse `content/blocks.ts` copy and a
-   plan set from `content/plans/` instead of copying it.
+   `groups`, `prose`, `tld-table`, `bulk-form`), CTA and optional FAQ. Reuse
+   `content/blocks.ts` copy and a plan set from `content/plans/` instead of
+   copying it.
+
+Domain pages (`src/content/domains.ts`) use the same template: they simply omit
+`plans` and use `tld-table` for pricing and `bulk-form` for the bulk register /
+transfer tools. Domain search forms post to the legacy WHMCS endpoint
+(`site.domainSearchAction`) with the original `a` / `domain` / `query` fields.
 3. Export the route component from `src/pages/productRoutes.tsx` via `productRoute`.
 4. Register the route in `src/app/routes.tsx` with the exact legacy `.html` name.
 5. Run `npm run build`; the parity checker must pass for that filename.

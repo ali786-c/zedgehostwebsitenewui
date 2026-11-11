@@ -12,6 +12,17 @@ import { windowsSharedPage } from '../content/windowsShared';
 import { businessEmailPage, enterpriseEmailPage } from '../content/email';
 import { digicertPage, siteLockPage, websiteBackupPage } from '../content/security';
 import {
+  bulkRegisterPage,
+  bulkTransferPage,
+  domainPromosPage,
+  domainSearchPage,
+  domainTransferPage,
+  freeGtldsPage,
+  nameSuggestionPage,
+  newGtldsPage,
+  premiumDomainPage,
+} from '../content/domains';
+import {
   basicVpsPage,
   proVpsPage,
   professionalVpsPage,
@@ -52,3 +63,16 @@ export const EnterpriseEmailPage = productRoute(enterpriseEmailPage, 'enterprise
 export const SiteLockPage = productRoute(siteLockPage, 'siteLock.html');
 export const WebsiteBackupPage = productRoute(websiteBackupPage, 'website-backup.html');
 export const DigicertPage = productRoute(digicertPage, 'digicert-certificate.html');
+
+export const DomainSearchPage = productRoute(domainSearchPage, 'domain-search.html');
+export const DomainTransferPage = productRoute(domainTransferPage, 'domain-transfer.html');
+export const PremiumDomainPage = productRoute(premiumDomainPage, 'premium-domain.html');
+export const NewGtldsPage = productRoute(newGtldsPage, 'new-gtlds.html');
+export const FreeGtldsPage = productRoute(freeGtldsPage, 'free-gtlds.html');
+export const DomainPromosPage = productRoute(domainPromosPage, 'domain-promos.html');
+export const BulkTransferPage = productRoute(bulkTransferPage, 'bulk-transfer.html');
+export const BulkRegisterPage = productRoute(bulkRegisterPage, 'domain-bulk-register.html');
+export const NameSuggestionPage = productRoute(
+  nameSuggestionPage,
+  'domain-name-suggestion.html',
+);
