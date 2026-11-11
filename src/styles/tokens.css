@@ -1,0 +1,51 @@
+:root {
+  --zh-green: #2a862e;
+  --zh-green-dark: #1f6b24;
+  --zh-green-light: #43a048;
+  --zh-deep: #0b3d14;
+  --zh-deep-soft: #12491b;
+  --zh-mint: #eaf6ec;
+  --zh-mint-strong: #d9eedd;
+  --zh-purple: #644dc5;
+  --zh-ink: #0f172a;
+  --zh-muted: #5b6b63;
+  --zh-bg: #f7f9f7;
+  --zh-surface: #ffffff;
+  --zh-border: #e3eae4;
+
+  --zh-radius-sm: 12px;
+  --zh-radius: 16px;
+  --zh-radius-lg: 24px;
+  --zh-radius-pill: 999px;
+
+  --zh-shadow-sm: 0 2px 8px rgba(11, 61, 20, 0.06);
+  --zh-shadow-md: 0 16px 40px rgba(11, 61, 20, 0.1);
+
+  --zh-container: 1240px;
+  --zh-gutter: clamp(16px, 4vw, 32px);
+  --zh-header-h: 74px;
+
+  --zh-space-1: 4px;
+  --zh-space-2: 8px;
+  --zh-space-3: 12px;
+  --zh-space-4: 16px;
+  --zh-space-5: 24px;
+  --zh-space-6: 32px;
+  --zh-space-7: 48px;
+  --zh-space-8: 64px;
+  --zh-space-9: 96px;
+
+  --zh-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif;
+  --zh-fs-xs: 0.75rem;
+  --zh-fs-sm: 0.875rem;
+  --zh-fs-base: 1rem;
+  --zh-fs-lg: 1.125rem;
+  --zh-fs-xl: clamp(1.25rem, 1.6vw, 1.5rem);
+  --zh-fs-h3: clamp(1.25rem, 2vw, 1.5rem);
+  --zh-fs-h2: clamp(1.75rem, 3vw, 2.5rem);
+  --zh-fs-display: clamp(2.25rem, 4.6vw, 3.5rem);
+
+  --zh-transition: 200ms cubic-bezier(0.2, 0.7, 0.3, 1);
+  --zh-transition-slow: 400ms cubic-bezier(0.2, 0.7, 0.3, 1);
+}
