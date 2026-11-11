@@ -1,7 +1,7 @@
-import type { FaqItem, Feature, HeroData, PlanSectionData, SeoData } from './types';
-import seoData from './seo.json';
+import type { FaqItem, Feature, HeroData, PlanSectionData, ProductPageData } from './types';
+import { seo } from './seo';
 
-export const cloudSeo = seoData.cloud as unknown as SeoData;
+export const cloudSeo = seo.cloud;
 
 export const cloudHero: HeroData = {
   eyebrow: 'Special Offer',
@@ -28,11 +28,13 @@ export const cloudPlans: PlanSectionData = {
   title: 'Scalable Cloud Hosting Plans in Pakistan',
   subtitle:
     'High performance cloud servers with dedicated resources, NVMe SSD speed, and 99.99% uptime guarantee.',
+  note: 'All plans include free SSL, cPanel and 24/7 support.',
   plans: [
     {
       name: 'Cloud Starter',
       tagline: 'Ideal for growing blogs and business websites',
-      annualPrice: 9999,
+      price: 9999,
+      billing: 'yearly',
       note: 'Billed annually. Cancel anytime.',
       ctaHref: 'https://my.zedgehost.com/index.php?rp=/store/cloud-hosting/cloud-starter',
       specs: [
@@ -60,7 +62,8 @@ export const cloudPlans: PlanSectionData = {
     {
       name: 'Cloud Business',
       tagline: 'Best value for high-traffic sites & WooCommerce stores',
-      annualPrice: 15000,
+      price: 15000,
+      billing: 'yearly',
       note: 'Billed annually. Cancel anytime.',
       ctaHref: 'https://my.zedgehost.com/index.php?rp=/store/cloud-hosting/cloud-business',
       popular: true,
@@ -90,7 +93,8 @@ export const cloudPlans: PlanSectionData = {
     {
       name: 'Cloud Enterprise',
       tagline: 'Maximum cloud power, RAM, and isolated resources',
-      annualPrice: 25000,
+      price: 25000,
+      billing: 'yearly',
       note: 'Billed annually. Cancel anytime.',
       ctaHref: 'https://my.zedgehost.com/index.php?rp=/store/cloud-hosting/cloud-enterprise',
       specs: [
@@ -269,3 +273,65 @@ export const cloudFaqs: FaqItem[] = [
     a: 'Yes, we do have a 30 day Money Back Guarantee associated with Cloud Hosting.',
   },
 ];
+
+export const cloudPage: ProductPageData = {
+  seo: seo.cloud,
+  hero: { ...cloudHero, priceSuffix: 'year' },
+  plans: cloudPlans,
+  sections: [
+    {
+      kind: 'split',
+      data: {
+        eyebrow: cloudInfrastructure.eyebrow,
+        title: cloudInfrastructure.title,
+        text: cloudInfrastructure.subtitle,
+        points: cloudInfrastructure.points,
+        image: {
+          src: '/assets/img/cloud-infrastructure.webp',
+          alt: 'Scalable cloud infrastructure by ZedgeHost',
+        },
+        tone: 'mint',
+      },
+    },
+    {
+      kind: 'features',
+      eyebrow: 'Cloud Hosting',
+      title: 'What Does Cloud Hosting mean for your Website?',
+      subtitle: 'Next-level Performance and Reliability with Simplified Management.',
+      features: cloudFeatures,
+    },
+    {
+      kind: 'split',
+      data: {
+        eyebrow: cloudSecurity.eyebrow,
+        title: cloudSecurity.title,
+        text: cloudSecurity.subtitle,
+        points: cloudSecurity.points,
+        icon: 'shield',
+        image: { src: '/assets/img/security.webp', alt: 'Advanced security for cloud hosting' },
+        reverse: true,
+        tone: 'mint',
+      },
+    },
+    {
+      kind: 'features',
+      eyebrow: 'Getting Started',
+      title: 'Just what you need for a Basic Web Presence',
+      subtitle: 'Build your first website with ease using essential hosting features.',
+      features: cloudBasics,
+    },
+  ],
+  cta: {
+    title: cloudSupport.title,
+    text: cloudSupport.text,
+    primary: cloudSupport.cta,
+    secondary: { label: 'View Cloud Plans', href: '#plans' },
+  },
+  faq: {
+    title: 'Frequently Asked Questions',
+    subtitle:
+      'Explore our FAQ to find quick answers to the most common questions about our products and services.',
+    items: cloudFaqs,
+    cta: { label: 'Contact our support team', href: cloudSupport.cta.href },
+  },
+};

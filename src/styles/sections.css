@@ -661,3 +661,122 @@
     align-items: flex-start;
   }
 }
+
+/* ---------- Split text ---------- */
+.zh-split__text {
+  margin-top: var(--zh-space-4);
+  color: var(--zh-muted);
+}
+
+.zh-split--reverse .zh-split__media {
+  order: -1;
+}
+
+/* ---------- Comparison table ---------- */
+.zh-compare__scroll {
+  overflow-x: auto;
+  border: 1px solid var(--zh-border);
+  border-radius: var(--zh-radius-lg);
+  background: var(--zh-surface);
+  box-shadow: var(--zh-shadow-sm);
+}
+
+.zh-compare {
+  width: 100%;
+  min-width: 680px;
+  border-collapse: collapse;
+}
+
+.zh-compare th,
+.zh-compare td {
+  padding: 14px 18px;
+  text-align: left;
+  border-bottom: 1px solid var(--zh-border);
+  font-size: var(--zh-fs-sm);
+}
+
+.zh-compare thead th {
+  background: var(--zh-mint);
+  color: var(--zh-deep);
+  font-size: var(--zh-fs-base);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.zh-compare tbody th {
+  color: var(--zh-muted);
+  font-weight: 500;
+}
+
+.zh-compare tbody td {
+  color: var(--zh-ink);
+}
+
+.zh-compare tbody tr:nth-child(even) {
+  background: #fbfdfb;
+}
+
+.zh-compare tbody tr:last-child th,
+.zh-compare tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.zh-compare__tag {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 9px;
+  border-radius: var(--zh-radius-pill);
+  background: var(--zh-green);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+/* ---------- Steps ---------- */
+.zh-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--zh-space-4);
+  counter-reset: none;
+}
+
+.zh-step {
+  padding: var(--zh-space-5);
+  background: var(--zh-surface);
+  border: 1px solid var(--zh-border);
+  border-radius: var(--zh-radius);
+  box-shadow: var(--zh-shadow-sm);
+}
+
+.zh-step__number {
+  display: block;
+  margin-bottom: var(--zh-space-3);
+  color: var(--zh-green);
+  font-size: var(--zh-fs-xs);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.zh-step h3 {
+  margin-bottom: var(--zh-space-2);
+  font-size: var(--zh-fs-lg);
+}
+
+.zh-step p {
+  color: var(--zh-muted);
+  font-size: var(--zh-fs-sm);
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .zh-split--reverse .zh-split__media {
+    order: 0;
+  }
+
+  .zh-steps {
+    grid-template-columns: 1fr;
+  }
+}

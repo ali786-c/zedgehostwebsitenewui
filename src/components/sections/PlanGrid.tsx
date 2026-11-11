@@ -1,16 +1,16 @@
 import { useState } from 'react';
 import { useCurrency } from '../../app/currency';
-import type { Plan } from '../../content/types';
-import { formatPrice, monthlyEquivalent } from '../../lib/format';
+import type { BillingPeriod, Plan } from '../../content/types';
+import { formatPrice } from '../../lib/format';
+import { resolvePlanAmount } from '../../lib/plans';
 import { Badge } from '../ui/Badge';
 import { Button } from '../ui/Button';
 import { Icon } from '../ui/Icon';
 
-type Billing = 'yearly' | 'monthly';
-
-function PlanCard({ plan, billing }: { plan: Plan; billing: Billing }) {
+function PlanCard({ plan, period }: { plan: Plan; period: BillingPeriod }) {
   const { currency } = useCurrency();
-  const amount = billing === 'yearly' ? plan.annualPrice : monthlyEquivalent(plan.annualPrice);
+  const amount = resolvePlanAmount(plan, period);
+  const suffix = period === 'monthly' ? 'month' : 'year';
 
   return (
     <article className={`zh-plan${plan.popular ? ' zh-plan--popular' : ''}`}>
@@ -24,17 +24,13 @@ function PlanCard({ plan, billing }: { plan: Plan; billing: Billing }) {
 
       <p className="zh-plan__price">
         {formatPrice(amount, currency)}
-        <span>/ {billing === 'yearly' ? 'year' : 'month'}</span>
+        <span>/ {suffix}</span>
       </p>
       <p className="zh-plan__note">{plan.note}</p>
 
       <div className="zh-plan__cta">
-        <Button
-          href={plan.ctaHref}
-          variant={plan.popular ? 'on-dark' : 'primary'}
-          block
-        >
-          Buy Now
+        <Button href={plan.ctaHref} variant={plan.popular ? 'on-dark' : 'primary'} block>
+          {plan.ctaLabel ?? 'Buy Now'}
         </Button>
       </div>
 
@@ -64,36 +60,52 @@ function PlanCard({ plan, billing }: { plan: Plan; billing: Billing }) {
   );
 }
 
-export function PlanGrid({ plans }: { plans: Plan[] }) {
-  const [billing, setBilling] = useState<Billing>('yearly');
+interface PlanGridProps {
+  plans: Plan[];
+  note?: string;
+}
+
+export function PlanGrid({ plans, note }: PlanGridProps) {
+  const firstPlan = plans[0];
+  // The monthly toggle only makes sense when every plan is priced per year.
+  const showToggle = plans.length > 0 && plans.every((plan) => plan.billing === 'yearly');
+  const [billing, setBilling] = useState<BillingPeriod>(firstPlan?.billing ?? 'yearly');
+
+  if (plans.length === 0) return null;
 
   return (
     <div>
       <div className="zh-plans__toolbar">
-        <div className="zh-billing" role="group" aria-label="Billing period">
-          <button
-            type="button"
-            aria-pressed={billing === 'yearly'}
-            onClick={() => setBilling('yearly')}
-          >
-            Yearly
-          </button>
-          <button
-            type="button"
-            aria-pressed={billing === 'monthly'}
-            onClick={() => setBilling('monthly')}
-          >
-            Monthly
-          </button>
-        </div>
-        <p style={{ color: 'var(--zh-muted)', fontSize: '13px' }}>
-          All plans include free SSL, cPanel and 24/7 support.
-        </p>
+        {showToggle ? (
+          <div className="zh-billing" role="group" aria-label="Billing period">
+            <button
+              type="button"
+              aria-pressed={billing === 'yearly'}
+              onClick={() => setBilling('yearly')}
+            >
+              Yearly
+            </button>
+            <button
+              type="button"
+              aria-pressed={billing === 'monthly'}
+              onClick={() => setBilling('monthly')}
+            >
+              Monthly
+            </button>
+          </div>
+        ) : (
+          <p style={{ color: 'var(--zh-muted)', fontSize: '13px' }}>Monthly billing</p>
+        )}
+        {note && <p style={{ color: 'var(--zh-muted)', fontSize: '13px' }}>{note}</p>}
       </div>
 
       <div className="zh-plans__grid">
         {plans.map((plan) => (
-          <PlanCard key={plan.name} plan={plan} billing={billing} />
+          <PlanCard
+            key={plan.name}
+            plan={plan}
+            period={plan.billing === 'yearly' && showToggle ? billing : plan.billing}
+          />
         ))}
       </div>
     </div>

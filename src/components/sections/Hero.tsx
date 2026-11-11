@@ -24,7 +24,7 @@ export function Hero({ data }: { data: HeroData }) {
                 <span>Starting at</span>
                 <strong>{formatPrice(data.priceFrom, currency)}</strong>
                 {data.priceRegular && <s>{formatPrice(data.priceRegular, currency)}</s>}
-                <span>/year</span>
+                <span>/{data.priceSuffix ?? 'year'}</span>
               </p>
             )}
 

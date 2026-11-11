@@ -1,7 +1,6 @@
-import type { SeoData } from './types';
-import seoData from './seo.json';
+import { seo } from './seo';
 
-export const aboutSeo = seoData.about as unknown as SeoData;
+export const aboutSeo = seo.about;
 
 export const aboutIntro =
   'We are committed to protecting your privacy and safeguarding your personal information. This Privacy Policy explains how we collect, use, store, and protect the data you provide while using our website, products, and services.';

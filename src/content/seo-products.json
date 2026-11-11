@@ -1,0 +1,411 @@
+{
+  "shared-hosting": {
+    "title": "Cheap Web Hosting in Pakistan | Affordable Shared Hosting - ZedgeHost",
+    "description": "Get cheap web hosting in Pakistan starting at Rs 1,499/year. Free SSL, cPanel, NVMe SSD storage, 99.9% uptime, and 24/7 local support. Buy shared hosting in Pakistan.",
+    "canonical": "https://zedgehost.com/shared-hosting.html",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "h1": [
+      "Cheap Web Hosting in Pakistan starting from Rs. 1,499/Year"
+    ],
+    "schema": [
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Zedgehost Pakistan",
+          "url": "https://zedgehost.com/",
+          "logo": "https://zedgehost.com/assets/img/logo.png",
+          "description": "Web hosting, domain registration, VPS, cloud hosting, business email, and website security services in Pakistan.",
+          "areaServed": "Pakistan",
+          "sameAs": [
+            "https://zedgehost.com/"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Cheap Web Hosting in Pakistan",
+          "provider": {
+            "@type": "Organization",
+            "name": "Zedgehost Pakistan",
+            "url": "https://zedgehost.com/"
+          },
+          "areaServed": "Pakistan",
+          "url": "https://zedgehost.com/shared-hosting.html",
+          "description": "Cheap web hosting in Pakistan starting from Rs 1,499/year with NVMe SSD storage, free SSL, cPanel, and 24/7 local support for small businesses and startups."
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Where can I get cheap web hosting in Pakistan?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Zedgehost offers cheap web hosting in Pakistan starting from Rs. 1,499/year with NVMe SSD speeds, cPanel, free SSL, and local PKR payment methods like Easypaisa and JazzCash."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is shared hosting in Pakistan?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Shared hosting in Pakistan is an affordable hosting solution where multiple websites share server resources securely while retaining high performance, 99.9% uptime, and top-tier security."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is cheap web hosting good for small businesses in Pakistan?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Zedgehost cheap web hosting in Pakistan provides ultra-fast NVMe SSD storage, 1-click WordPress installer, free SSL certificate, and instant local support suitable for small businesses and startups."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What payment methods are accepted for web hosting in Pakistan?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We accept local Pakistani payment options including JazzCash, Easypaisa, Raast, Credit/Debit cards, and local bank transfers."
+              }
+            }
+          ]
+        }
+      ],
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://zedgehost.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Shared Hosting",
+            "item": "https://zedgehost.com/shared-hosting.html"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Shared Web Hosting in Pakistan",
+        "image": "https://zedgehost.com/assets/img/og-image.jpg",
+        "description": "Cheap and reliable shared web hosting in Pakistan starting from Rs 1,499/year with NVMe SSD storage, free SSL certificate, cPanel control panel, and 24/7 local PKR support.",
+        "sku": "ZH-SHARED-PK",
+        "brand": {
+          "@type": "Brand",
+          "name": "ZedgeHost"
+        },
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "PKR",
+          "lowPrice": "1499",
+          "highPrice": "9999",
+          "offerCount": "4",
+          "priceValidUntil": "2027-12-31",
+          "availability": "https://schema.org/InStock",
+          "url": "https://zedgehost.com/shared-hosting.html",
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "Starter Plan",
+              "price": "1499",
+              "priceCurrency": "PKR",
+              "priceValidUntil": "2027-12-31",
+              "availability": "https://schema.org/InStock",
+              "url": "https://zedgehost.com/shared-hosting.html",
+              "description": "Rs 1,499/year - 1 Website, NVMe SSD Storage, Free SSL, cPanel"
+            },
+            {
+              "@type": "Offer",
+              "name": "Standard Plan",
+              "price": "2999",
+              "priceCurrency": "PKR",
+              "priceValidUntil": "2027-12-31",
+              "availability": "https://schema.org/InStock",
+              "url": "https://zedgehost.com/shared-hosting.html",
+              "description": "Rs 2,999/year - Multiple Websites, NVMe SSD Storage, Free SSL, cPanel"
+            },
+            {
+              "@type": "Offer",
+              "name": "Business Plan",
+              "price": "3999",
+              "priceCurrency": "PKR",
+              "priceValidUntil": "2027-12-31",
+              "availability": "https://schema.org/InStock",
+              "url": "https://zedgehost.com/shared-hosting.html",
+              "description": "Rs 3,999/year - Unlimited NVMe SSD, Free Domain, Priority Support"
+            },
+            {
+              "@type": "Offer",
+              "name": "Enterprise Plan",
+              "price": "9999",
+              "priceCurrency": "PKR",
+              "priceValidUntil": "2027-12-31",
+              "availability": "https://schema.org/InStock",
+              "url": "https://zedgehost.com/shared-hosting.html",
+              "description": "Rs 9,999/year - Dedicated Resources, Turbo NVMe SSD, Enterprise Support"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "wordpress-hosting": {
+    "title": "WordPress Hosting Pakistan | Fast & Cheap Managed WP Hosting - ZedgeHost",
+    "description": "Best WordPress hosting in Pakistan starting at Rs 1,499/year. Ultra-fast LiteSpeed SSD servers, free SSL certificate, 1-click WP install, and 24/7 local PKR support.",
+    "canonical": "https://zedgehost.com/wordpress-hosting.html",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "h1": [
+      "WordPress Hosting in Pakistan | Fast & Cheap Managed WP Hosting"
+    ],
+    "schema": [
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Zedgehost Pakistan",
+          "url": "https://zedgehost.com/",
+          "logo": "https://zedgehost.com/assets/img/logo.png",
+          "description": "Web hosting, domain registration, VPS, cloud hosting, business email, and website security services in Pakistan.",
+          "areaServed": "Pakistan",
+          "sameAs": [
+            "https://zedgehost.com/"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "WordPress Hosting in Pakistan",
+          "provider": {
+            "@type": "Organization",
+            "name": "Zedgehost Pakistan",
+            "url": "https://zedgehost.com/"
+          },
+          "areaServed": "Pakistan",
+          "url": "https://zedgehost.com/wordpress-hosting.html",
+          "description": "Fast managed WordPress hosting in Pakistan starting from Rs 1,499/year with LiteSpeed SSD acceleration, free SSL, and 24/7 local PKR support."
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is the best WordPress hosting in Pakistan?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Zedgehost provides the best managed WordPress hosting in Pakistan featuring LiteSpeed SSD caching, free SSL certificates, automatic daily backups, and 24/7 local PKR customer support."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How much does WordPress hosting cost in Pakistan?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "WordPress hosting at Zedgehost starts from just Rs 1,499/year with free SSL, NVMe SSD storage, 1-click WordPress install, and local payment methods like Easypaisa, JazzCash, and Raast."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you provide free WordPress website migration?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, Zedgehost offers 100% free expert migration for moving your existing WordPress site from any host to Zedgehost without any downtime."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I pay for WordPress hosting in PKR?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, you can pay directly in Pakistani Rupees (PKR) via JazzCash, Easypaisa, Raast, or local Pakistan bank transfers."
+              }
+            }
+          ]
+        }
+      ],
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://zedgehost.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "WordPress Hosting",
+            "item": "https://zedgehost.com/wordpress-hosting.html"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "WordPress Hosting in Pakistan",
+        "image": "https://zedgehost.com/Images_WebP/wordpress-hero.webp",
+        "description": "High performance managed WordPress hosting in Pakistan starting from Rs 1,499/year with LiteSpeed NVMe SSD servers, free SSL certificate, 1-click WP install, and 24/7 local PKR support.",
+        "sku": "ZH-WP-PK",
+        "brand": {
+          "@type": "Brand",
+          "name": "ZedgeHost"
+        },
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "PKR",
+          "lowPrice": "1499",
+          "highPrice": "9999",
+          "offerCount": "4",
+          "priceValidUntil": "2027-12-31",
+          "availability": "https://schema.org/InStock",
+          "url": "https://zedgehost.com/wordpress-hosting.html",
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "WordPress Starter",
+              "price": "1499",
+              "priceCurrency": "PKR",
+              "priceValidUntil": "2027-12-31",
+              "availability": "https://schema.org/InStock",
+              "url": "https://zedgehost.com/wordpress-hosting.html",
+              "description": "Rs 1,499/year - 1 WordPress Site, NVMe SSD Storage, Free SSL, 1-Click Install"
+            },
+            {
+              "@type": "Offer",
+              "name": "WordPress Standard",
+              "price": "2999",
+              "priceCurrency": "PKR",
+              "priceValidUntil": "2027-12-31",
+              "availability": "https://schema.org/InStock",
+              "url": "https://zedgehost.com/wordpress-hosting.html",
+              "description": "Rs 2,999/year - Multiple WordPress Sites, LiteSpeed Caching, Free SSL"
+            },
+            {
+              "@type": "Offer",
+              "name": "WordPress Business",
+              "price": "3999",
+              "priceCurrency": "PKR",
+              "priceValidUntil": "2027-12-31",
+              "availability": "https://schema.org/InStock",
+              "url": "https://zedgehost.com/wordpress-hosting.html",
+              "description": "Rs 3,999/year - Unlimited NVMe SSD, Free .com Domain, Daily Backups"
+            },
+            {
+              "@type": "Offer",
+              "name": "WordPress Enterprise",
+              "price": "9999",
+              "priceCurrency": "PKR",
+              "priceValidUntil": "2027-12-31",
+              "availability": "https://schema.org/InStock",
+              "url": "https://zedgehost.com/wordpress-hosting.html",
+              "description": "Rs 9,999/year - Dedicated Resources, Turbo LiteSpeed, Priority 24/7 Support"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "linux-vps-server": {
+    "title": "VPS Hosting Plans in Pakistan from Rs 1,699/mo | ZedgeHost",
+    "description": "Compare Zedgehost Linux VPS plans in Pakistan: 1–2 CPU cores, 2–8 GB RAM, 40–160 GB SSD storage, 2–8 TB data transfer, and plans from Rs 1,699 per month.",
+    "canonical": "https://zedgehost.com/linux-vps-server.html",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "h1": [
+      "Linux VPS Hosting Plans in Pakistan"
+    ],
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://zedgehost.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Linux VPS Hosting",
+            "item": "https://zedgehost.com/linux-vps-server.html"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Linux VPS Hosting in Pakistan",
+        "image": "https://zedgehost.com/Images_WebP/vps-hosting.webp",
+        "description": "High performance Linux VPS hosting in Pakistan with dedicated CPU cores, NVMe SSD storage, full root access, and 24/7 local PKR support starting from Rs 1,699/month.",
+        "sku": "ZH-VPS-LINUX",
+        "brand": {
+          "@type": "Brand",
+          "name": "ZedgeHost"
+        },
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "PKR",
+          "lowPrice": "1699",
+          "highPrice": "4999",
+          "offerCount": "4",
+          "priceValidUntil": "2027-12-31",
+          "availability": "https://schema.org/InStock",
+          "url": "https://zedgehost.com/linux-vps-server.html",
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "VPS Basic",
+              "price": "1699",
+              "priceCurrency": "PKR",
+              "priceValidUntil": "2027-12-31",
+              "availability": "https://schema.org/InStock",
+              "url": "https://my.zedgehost.com/index.php?rp=/store/vps/basic-vps",
+              "description": "1 CPU Core, 2 GB RAM, 40 GB SSD Storage, 2 TB Data Transfer"
+            },
+            {
+              "@type": "Offer",
+              "name": "VPS Standard",
+              "price": "2699",
+              "priceCurrency": "PKR",
+              "priceValidUntil": "2027-12-31",
+              "availability": "https://schema.org/InStock",
+              "url": "https://my.zedgehost.com/index.php?rp=/store/vps/standard-vps",
+              "description": "1 CPU Core, 4 GB RAM, 80 GB SSD Storage, 4 TB Data Transfer"
+            },
+            {
+              "@type": "Offer",
+              "name": "VPS Advanced",
+              "price": "3999",
+              "priceCurrency": "PKR",
+              "priceValidUntil": "2027-12-31",
+              "availability": "https://schema.org/InStock",
+              "url": "https://my.zedgehost.com/index.php?rp=/store/vps/advance-vps",
+              "description": "2 CPU Cores, 6 GB RAM, 120 GB SSD Storage, 6 TB Data Transfer"
+            },
+            {
+              "@type": "Offer",
+              "name": "VPS Pro",
+              "price": "4999",
+              "priceCurrency": "PKR",
+              "priceValidUntil": "2027-12-31",
+              "availability": "https://schema.org/InStock",
+              "url": "https://my.zedgehost.com/index.php?rp=/store/vps/pro-vps",
+              "description": "2 CPU Cores, 8 GB RAM, 160 GB SSD Storage, 8 TB Data Transfer"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

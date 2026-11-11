@@ -129,7 +129,7 @@ function isInternalPageLink(href: string): boolean {
     return /^https?:\/\/(www\.)?zedgehost\.com/i.test(trimmed);
   }
   const path = normalizeLink(trimmed).toLowerCase();
-  if (!path) return false;
+  if (!path || path === '.' || path === './') return false;
   return !ASSET_EXTENSIONS.some((extension) => path.endsWith(extension));
 }
 
@@ -140,7 +140,9 @@ function extractLinks(html: string): string[] {
   while ((match = pattern.exec(html)) !== null) {
     const href = match[1];
     if (!isInternalPageLink(href)) continue;
-    links.add(normalizeLink(href));
+    const link = normalizeLink(href);
+    if (!link) continue;
+    links.add(link);
   }
   return [...links].sort();
 }

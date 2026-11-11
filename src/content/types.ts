@@ -43,12 +43,16 @@ export interface PlanSpec {
   label: string;
 }
 
+export type BillingPeriod = 'yearly' | 'monthly';
+
 export interface Plan {
   name: string;
   tagline: string;
-  annualPrice: number;
+  price: number;
+  billing: BillingPeriod;
   note: string;
   ctaHref: string;
+  ctaLabel?: string;
   popular?: boolean;
   badge?: string;
   specs: PlanSpec[];
@@ -59,6 +63,7 @@ export interface PlanSectionData {
   eyebrow: string;
   title: string;
   subtitle: string;
+  note?: string;
   plans: Plan[];
 }
 
@@ -84,4 +89,58 @@ export interface TrustItem {
   icon: IconName;
   title: string;
   text: string;
+}
+
+export interface SplitSectionData {
+  eyebrow?: string;
+  title: string;
+  text: string;
+  points: string[];
+  icon?: IconName;
+  image: { src: string; alt: string };
+  reverse?: boolean;
+  tone?: 'default' | 'mint';
+}
+
+export interface ComparisonSectionData {
+  eyebrow?: string;
+  title: string;
+  subtitle?: string;
+}
+
+export interface StepsSectionData {
+  eyebrow?: string;
+  title: string;
+  subtitle?: string;
+  items: { title: string; text: string }[];
+}
+
+export type ProductSection =
+  | { kind: 'split'; data: SplitSectionData }
+  | {
+      kind: 'features';
+      eyebrow?: string;
+      title: string;
+      subtitle?: string;
+      features: Feature[];
+      tone?: 'default' | 'mint';
+    }
+  | { kind: 'comparison'; data: ComparisonSectionData }
+  | { kind: 'steps'; data: StepsSectionData };
+
+export interface FaqSectionData {
+  title: string;
+  subtitle?: string;
+  items: FaqItem[];
+  cta?: Cta;
+}
+
+/** Everything a product page needs; the ProductPage template owns the layout. */
+export interface ProductPageData {
+  seo: SeoData;
+  hero: HeroData;
+  plans: PlanSectionData;
+  sections: ProductSection[];
+  cta: CtaBandData;
+  faq: FaqSectionData;
 }
