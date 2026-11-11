@@ -180,6 +180,57 @@ export interface FaqSectionData {
   cta?: Cta;
 }
 
+/** A run of article copy: plain text, an inline link, or emphasis. */
+export interface ArticleInline {
+  text: string;
+  href?: string;
+  strong?: boolean;
+}
+
+/** One block of article body copy; the article renderer owns the markup. */
+export type ArticleBlock =
+  | { kind: 'heading'; level: 2 | 3; text: string }
+  | { kind: 'paragraph'; content: ArticleInline[] }
+  | { kind: 'list'; ordered: boolean; items: ArticleInline[][] }
+  | { kind: 'table'; head: ArticleInline[][]; rows: ArticleInline[][][] };
+
+/** Everything a blog post needs; BlogPostPage owns the layout. */
+export interface BlogPostData {
+  slug: string;
+  title: string;
+  h1: string;
+  breadcrumb: string;
+  category: string;
+  author: string;
+  date: string;
+  dateISO: string;
+  readTime: string;
+  hero: { src: string; alt: string };
+  answer: ArticleInline[];
+  blocks: ArticleBlock[];
+  cta: { content: ArticleInline[]; cta: Cta };
+  faq: FaqItem[];
+  seo: SeoData;
+}
+
+export interface BlogCardData {
+  href: string;
+  category: string;
+  title: string;
+  description: string;
+  meta: string;
+  ctaLabel: string;
+}
+
+export interface BlogIndexData {
+  title: string;
+  intro: string;
+  hero: { src: string; alt: string };
+  categories: string[];
+  cards: BlogCardData[];
+  seo: SeoData;
+}
+
 /** Everything a product page needs; the ProductPage template owns the layout. */
 export interface ProductPageData {
   seo: SeoData;

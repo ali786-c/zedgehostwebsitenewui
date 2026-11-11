@@ -1,4 +1,4 @@
-import type { ComponentType } from 'react';
+import type { ComponentType, ReactElement } from 'react';
 import type { SeoData } from '../content/types';
 import { AboutPage } from '../pages/AboutPage';
 import { HomePage } from '../pages/HomePage';
@@ -31,6 +31,9 @@ import {
   WindowsSharedPage,
   WordPressHostingPage,
 } from '../pages/productRoutes';
+import { blogIndex, blogPosts } from '../content/blog';
+import { BlogIndexPage } from '../pages/BlogIndexPage';
+import { BlogPostPage } from '../pages/BlogPostPage';
 import { aboutSeo } from '../content/about';
 import { homeSeo } from '../content/home';
 import { seo } from '../content/seo';
@@ -50,7 +53,13 @@ function productRoute(output: string, Page: ComponentType, pageSeo: SeoData): Ro
 
 export const routes: RouteDefinition[] = [
   { key: 'home', path: '/', output: 'index.html', Page: HomePage, seo: homeSeo },
-  { key: 'about-us', path: '/about-us.html', output: 'about-us.html', Page: AboutPage, seo: aboutSeo },
+  {
+    key: 'about-us',
+    path: '/about-us.html',
+    output: 'about-us.html',
+    Page: AboutPage,
+    seo: aboutSeo,
+  },
   productRoute('cloud-hosting.html', CloudHostingPage, seo.cloud),
   productRoute('shared-hosting.html', SharedHostingPage, seo.sharedHosting),
   productRoute('wordpress-hosting.html', WordPressHostingPage, seo.wordpressHosting),
@@ -78,6 +87,18 @@ export const routes: RouteDefinition[] = [
   productRoute('bulk-transfer.html', BulkTransferPage, seo.bulkTransfer),
   productRoute('domain-bulk-register.html', BulkRegisterPage, seo.bulkRegister),
   productRoute('domain-name-suggestion.html', NameSuggestionPage, seo.domainSuggestion),
+  // Blog: one template, one route per post, all built from `content/blog`.
+  { key: 'blog', path: '/blog.html', output: 'blog.html', Page: BlogIndexPage, seo: blogIndex.seo },
+  ...blogPosts.map((post): RouteDefinition => {
+    const Page = (): ReactElement => <BlogPostPage post={post} />;
+    return {
+      key: post.slug,
+      path: `/${post.slug}.html`,
+      output: `${post.slug}.html`,
+      Page,
+      seo: post.seo,
+    };
+  }),
 ];
 
 export function getRoute(key: string): RouteDefinition | undefined {

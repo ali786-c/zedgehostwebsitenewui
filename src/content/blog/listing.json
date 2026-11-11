@@ -1,0 +1,136 @@
+{
+  "title": "ZedgeHost Blog | Web Hosting Guides for Pakistan",
+  "description": "Practical web hosting guides for Pakistan: hosting costs, WordPress, VPS, domains and local payments — written to answer the questions people actually search for.",
+  "canonical": "https://zedgehost.com/blog.html",
+  "robots": "index, follow, max-image-preview:large",
+  "h1": "ZedgeHost Blog",
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "ZedgeHost Blog",
+      "url": "https://zedgehost.com/blog.html",
+      "description": "Practical web hosting guides for Pakistan: hosting costs, WordPress, VPS, domains and local payments.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "ZedgeHost",
+        "url": "https://zedgehost.com/"
+      }
+    }
+  ],
+  "subtitle": "Practical guides about web hosting in Pakistan — written to answer the questions people actually search for, with real prices and no jargon. New guides are added regularly.",
+  "cards": [
+    {
+      "href": "blog-buy-cheap-com-domain-pakistan.html",
+      "category": "Domain Guides",
+      "title": "How to Buy a Cheap .com Domain in Pakistan (2026): Steps, Price & What to Check Before You Buy",
+      "description": "A .com domain at ZedgeHost costs Rs 2,999, payable in PKR with Easypaisa, JazzCash, Raast or bank transfer. Registration steps, first-year vs renewal price, and what to check before you pay.",
+      "meta": "11 November 2026 · 6 min read",
+      "ctaLabel": "Read the guide"
+    },
+    {
+      "href": "blog-cheap-web-hosting-pakistan.html",
+      "category": "Hosting Guides",
+      "title": "Cheap Web Hosting in Pakistan (2026): Prices, Plans & What to Check Before You Buy",
+      "description": "Cheap web hosting in Pakistan starts at Rs 1,499 per year with PKR payments via JazzCash, Easypaisa, Raast and bank transfer. Real prices, who needs which plan, and how to choose without overpaying.",
+      "meta": "10 November 2026 · 7 min read",
+      "ctaLabel": "Read the guide"
+    },
+    {
+      "href": "blog-cheap-web-hosting-bahawalpur.html",
+      "category": "City Guides",
+      "title": "Cheap Web Hosting in Bahawalpur (2026): Prices, Plans & What to Check Before You Buy",
+      "description": "Cheap web hosting in Bahawalpur starts at Rs 1,499 per year with PKR payments via JazzCash, Easypaisa, Raast and bank transfer. Real prices, what Bahawalpur traders, agriculture businesses and students actually need, and how to choose without overpaying.",
+      "meta": "9 November 2026 · 7 min read",
+      "ctaLabel": "Read the guide"
+    },
+    {
+      "href": "blog-cheap-web-hosting-hyderabad.html",
+      "category": "City Guides",
+      "title": "Cheap Web Hosting in Hyderabad (2026): Prices, Plans & What to Check Before You Buy",
+      "description": "Cheap web hosting in Hyderabad starts at Rs 1,499 per year with PKR payments via JazzCash, Easypaisa, Raast and bank transfer. Real prices, what Hyderabad traders and small businesses actually need, and how to choose without overpaying.",
+      "meta": "8 November 2026 · 7 min read",
+      "ctaLabel": "Read the guide"
+    },
+    {
+      "href": "blog-cheap-web-hosting-sialkot.html",
+      "category": "City Guides",
+      "title": "Cheap Web Hosting in Sialkot (2026): Prices, Plans & What to Check Before You Buy",
+      "description": "Cheap web hosting in Sialkot starts at Rs 1,499 per year with PKR payments via JazzCash, Easypaisa, Raast and bank transfer. Real prices, what Sialkot exporters and manufacturers actually need, and how to choose without overpaying.",
+      "meta": "7 November 2026 · 7 min read",
+      "ctaLabel": "Read the guide"
+    },
+    {
+      "href": "blog-cheap-web-hosting-quetta.html",
+      "category": "City Guides",
+      "title": "Cheap Web Hosting in Quetta (2026): Prices, Plans & What to Check Before You Buy",
+      "description": "Cheap web hosting in Quetta starts at Rs 1,499 per year with PKR payments via JazzCash, Easypaisa, Raast and bank transfer. Real prices, what Quetta businesses actually need, and how to choose without overpaying.",
+      "meta": "6 November 2026 · 7 min read",
+      "ctaLabel": "Read the guide"
+    },
+    {
+      "href": "blog-cheap-web-hosting-peshawar.html",
+      "category": "City Guides",
+      "title": "Cheap Web Hosting in Peshawar (2026): Prices, Plans & What to Check Before You Buy",
+      "description": "Cheap web hosting in Peshawar starts at Rs 1,499 per year with PKR payments via JazzCash, Easypaisa, Raast and bank transfer. Real prices, what Peshawar businesses actually need, and how to choose without overpaying.",
+      "meta": "5 November 2026 · 7 min read",
+      "ctaLabel": "Read the guide"
+    },
+    {
+      "href": "blog-cheap-web-hosting-multan.html",
+      "category": "City Guides",
+      "title": "Cheap Web Hosting in Multan (2026): Prices, Plans & What to Check Before You Buy",
+      "description": "Cheap web hosting in Multan starts at Rs 1,499 per year with PKR payments via JazzCash, Easypaisa, Raast and bank transfer. Real prices, what Multan businesses actually need, and how to choose without overpaying.",
+      "meta": "4 November 2026 · 7 min read",
+      "ctaLabel": "Read the guide"
+    },
+    {
+      "href": "blog-cheap-web-hosting-rawalpindi.html",
+      "category": "City Guides",
+      "title": "Cheap Web Hosting in Rawalpindi (2026): Prices, Plans & What to Check Before You Buy",
+      "description": "Cheap web hosting in Rawalpindi starts at Rs 1,499 per year with PKR payments via JazzCash, Easypaisa, Raast and bank transfer. Real prices, what Rawalpindi businesses actually need, and how to choose without overpaying.",
+      "meta": "3 November 2026 · 7 min read",
+      "ctaLabel": "Read the guide"
+    },
+    {
+      "href": "blog-cheap-web-hosting-faisalabad.html",
+      "category": "City Guides",
+      "title": "Cheap Web Hosting in Faisalabad (2026): Prices, Plans & What to Check Before You Buy",
+      "description": "Cheap web hosting in Faisalabad starts at Rs 1,499 per year with PKR payments via JazzCash, Easypaisa, Raast and bank transfer. Real prices, what Faisalabad businesses actually need, and how to choose without overpaying.",
+      "meta": "2 November 2026 · 7 min read",
+      "ctaLabel": "Read the guide"
+    },
+    {
+      "href": "blog-cheap-web-hosting-islamabad.html",
+      "category": "City Guides",
+      "title": "Cheap Web Hosting in Islamabad (2026): Prices, Plans & What to Check Before You Buy",
+      "description": "Cheap web hosting in Islamabad starts at Rs 1,499 per year with PKR payments via JazzCash, Easypaisa, Raast and bank transfer. Real prices, what Islamabad businesses actually need, and how to choose without overpaying.",
+      "meta": "30 October 2026 · 7 min read",
+      "ctaLabel": "Read the guide"
+    },
+    {
+      "href": "blog-cheap-web-hosting-karachi.html",
+      "category": "City Guides",
+      "title": "Cheap Web Hosting in Karachi (2026): Prices, Plans & What to Check Before You Buy",
+      "description": "Cheap web hosting in Karachi starts at Rs 1,499 per year with PKR payments via JazzCash, Easypaisa, Raast and bank transfer. Real prices, what Karachi businesses actually need, and how to choose without overpaying.",
+      "meta": "29 October 2026 · 7 min read",
+      "ctaLabel": "Read the guide"
+    },
+    {
+      "href": "blog-cheap-web-hosting-lahore.html",
+      "category": "City Guides",
+      "title": "Cheap Web Hosting in Lahore (2026): Prices, Plans & What to Check Before You Buy",
+      "description": "Cheap web hosting in Lahore starts at Rs 1,499 per year with PKR payments via JazzCash, Easypaisa, Raast and bank transfer. Real prices, what Lahore businesses actually need, and how to choose without overpaying.",
+      "meta": "29 October 2026 · 7 min read",
+      "ctaLabel": "Read the guide"
+    },
+    {
+      "href": "blog-web-hosting-cost-pakistan.html",
+      "category": "Hosting Guides",
+      "title": "How Much Does Web Hosting Cost in Pakistan? (2026 Prices Explained)",
+      "description": "Shared hosting starts at Rs 1,499 per year and VPS hosting at Rs 1,699 per month. See real prices for every hosting type, what makes the price go up or down, and how to choose without overpaying.",
+      "meta": "28 October 2026 · 7 min read",
+      "ctaLabel": "Read the guide"
+    }
+  ]
+}
