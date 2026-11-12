@@ -21,7 +21,7 @@ export function Footer() {
 
         <div className="zh-footer__main">
           <div className="zh-footer__brand">
-            <img src="/assets/img/logo.svg" alt="ZedgeHost" width="160" height="34" />
+            <img src="/assets/img/logo.png" alt="Zedgehost Logo" width="160" height="54" />
             <p>
               Zedgehost provides reliable, ultra-fast and secure web hosting, VPS and domain
               registration services to empower your online journey.
@@ -57,8 +57,9 @@ export function Footer() {
         </div>
 
         <div className="zh-footer__payments" aria-label="Accepted payment methods">
+          <span className="zh-footer__payments-label">We Accept</span>
           {payments.map((payment) => (
-            <span key={payment}>{payment}</span>
+            <img key={payment.src} src={payment.src} alt={payment.alt} width="70" height="24" />
           ))}
         </div>
 

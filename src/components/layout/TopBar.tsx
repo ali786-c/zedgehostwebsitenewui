@@ -12,8 +12,11 @@ export function TopBar() {
       <Container>
         <div className="zh-topbar__inner">
           <p className="zh-topbar__offer">
-            <span>
+            <span className="zh-topbar__offer-text">
               Offer <strong>Hosting Cloud</strong> — ultra-fast performance!
+            </span>
+            <span className="zh-topbar__offer-short">
+              <strong>70% Off</strong> domains
             </span>
             <a href="cloud-hosting.html">Claim Discount</a>
           </p>

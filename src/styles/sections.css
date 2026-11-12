@@ -209,14 +209,25 @@
   align-items: center;
   gap: 6px;
   padding: 7px 12px;
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  border: 1px solid var(--zh-border);
   border-radius: var(--zh-radius-pill);
-  color: #d7e8db;
+  background: #fff;
+  color: var(--zh-deep);
   font-size: 12px;
   font-weight: 600;
 }
 
 .zh-hero__chips svg {
+  color: var(--zh-green);
+}
+
+.zh-hero--dark .zh-hero__chips span {
+  border-color: rgba(255, 255, 255, 0.16);
+  background: transparent;
+  color: #d7e8db;
+}
+
+.zh-hero--dark .zh-hero__chips svg {
   color: #7fe08c;
 }
 

@@ -216,7 +216,13 @@ export const footerColumns: FooterColumn[] = [
   },
 ];
 
-export const payments = ['JazzCash', 'Easypaisa', 'Raast', 'Visa', 'Mastercard', 'Bank Transfer'];
+/** Payment marks from the legacy footer ("We Accept" row). */
+export const payments = [
+  { src: '/assets/img/pay-visa.png', alt: 'Visa' },
+  { src: '/assets/img/pay-mastercard.png', alt: 'Mastercard' },
+  { src: '/assets/img/pay-easypaisa.png', alt: 'Easypaisa' },
+  { src: '/assets/img/pay-jazzcash.png', alt: 'JazzCash' },
+];
 
 export const legalLinks = [
   { label: 'Terms & Conditions', href: 'legal.html' },

@@ -11,7 +11,7 @@ export function AuthPage({ data }: { data: AuthPageData }) {
       <Container>
         <div className={`zh-auth__card${data.columns === 2 ? ' zh-auth__card--wide' : ''}`}>
           <a className="zh-auth__logo" href="/index.html">
-            <img src="/assets/img/logo.svg" alt="Zedgehost Logo" width="180" height="44" />
+            <img src="/assets/img/logo.png" alt="Zedgehost Logo" width="160" height="54" />
           </a>
 
           <h2 className="zh-auth__title">{data.title}</h2>

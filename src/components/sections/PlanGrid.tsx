@@ -26,7 +26,9 @@ function PlanCard({ plan, period }: { plan: Plan; period: BillingPeriod }) {
         {formatPrice(amount, currency)}
         <span>/ {suffix}</span>
       </p>
-      <p className="zh-plan__note">{plan.note}</p>
+      <p className="zh-plan__note">
+        {plan.note.replace('{price}', formatPrice(amount, currency))}
+      </p>
 
       <div className="zh-plan__cta">
         <Button href={plan.ctaHref} variant={plan.popular ? 'on-dark' : 'primary'} block>

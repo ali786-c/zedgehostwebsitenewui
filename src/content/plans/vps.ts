@@ -8,7 +8,7 @@ export interface VpsPlanMeta {
   summary: string;
 }
 
-const cpu = (value: string) => ({ value, label: 'CPU Cores' });
+const cpu = (cores: number) => ({ value: String(cores), label: cores === 1 ? 'CPU Core' : 'CPU Cores' });
 const ram = (value: string) => ({ value, label: 'RAM' });
 const storage = (value: string) => ({ value, label: 'SSD Storage' });
 const transfer = (value: string) => ({ value, label: 'Data Transfer' });
@@ -33,7 +33,7 @@ export const vpsPlans: Plan[] = [
     billing: 'monthly',
     note,
     ctaHref: 'https://my.zedgehost.com/index.php?rp=/store/vps/basic-vps',
-    specs: [cpu('1 CPU Core'), ram('2 GB'), storage('40 GB'), transfer('2 TB'), port],
+    specs: [cpu(1), ram('2 GB'), storage('40 GB'), transfer('2 TB'), port],
     more,
   },
   {
@@ -43,7 +43,7 @@ export const vpsPlans: Plan[] = [
     billing: 'monthly',
     note,
     ctaHref: 'https://my.zedgehost.com/index.php?rp=/store/vps/standard-vps',
-    specs: [cpu('1 CPU Core'), ram('4 GB'), storage('80 GB'), transfer('4 TB'), port],
+    specs: [cpu(1), ram('4 GB'), storage('80 GB'), transfer('4 TB'), port],
     more,
   },
   {
@@ -55,7 +55,7 @@ export const vpsPlans: Plan[] = [
     ctaHref: 'https://my.zedgehost.com/index.php?rp=/store/vps/professional-vps',
     popular: true,
     badge: 'Popular',
-    specs: [cpu('2 CPU Cores'), ram('6 GB'), storage('120 GB'), transfer('6 TB'), port],
+    specs: [cpu(2), ram('6 GB'), storage('120 GB'), transfer('6 TB'), port],
     more,
   },
   {
@@ -65,7 +65,7 @@ export const vpsPlans: Plan[] = [
     billing: 'monthly',
     note,
     ctaHref: 'https://my.zedgehost.com/index.php?rp=/store/vps/professional-vps-2',
-    specs: [cpu('2 CPU Cores'), ram('8 GB'), storage('160 GB'), transfer('8 TB'), port],
+    specs: [cpu(2), ram('8 GB'), storage('160 GB'), transfer('8 TB'), port],
     more,
   },
 ];

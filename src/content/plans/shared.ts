@@ -2,7 +2,7 @@ import type { Plan } from '../types';
 
 /** Starter to Enterprise shared hosting plans, used by Home and Shared Hosting. */
 const sharedSpecs = (websites: string, storage: string, emails: string, databases: string) => [
-  { value: websites, label: 'Website' },
+  { value: websites, label: websites === '1' ? 'Website' : 'Websites' },
   { value: storage, label: 'NVMe Storage' },
   { value: 'Unmetered', label: 'Bandwidth' },
   { value: emails, label: 'Email Accounts' },
@@ -21,7 +21,7 @@ export const sharedHostingPlans: Plan[] = [
       tagline: 'Essential NVMe hosting for single websites',
       price: 1499,
       billing: 'yearly',
-      note: 'When you renew this plan',
+      note: '{price} when you renew this plan',
       ctaHref: 'https://my.zedgehost.com/index.php?rp=/store/web-hosting/starter',
       specs: sharedSpecs('1', '20 GB', '5', '10'),
       more: [
@@ -41,7 +41,7 @@ export const sharedHostingPlans: Plan[] = [
       tagline: 'Expanded resources for multiple websites',
       price: 2999,
       billing: 'yearly',
-      note: 'When you renew this plan',
+      note: '{price} when you renew this plan',
       ctaHref: 'https://my.zedgehost.com/index.php?rp=/store/web-hosting/standard',
       specs: sharedSpecs('5', '50 GB', '10', '20'),
       more: [
@@ -61,7 +61,7 @@ export const sharedHostingPlans: Plan[] = [
       tagline: 'Best value for agencies, businesses & stores',
       price: 3999,
       billing: 'yearly',
-      note: 'When you renew this plan',
+      note: '{price} when you renew this plan',
       ctaHref: 'https://my.zedgehost.com/index.php?rp=/store/web-hosting/business',
       popular: true,
       badge: 'Popular',
@@ -84,7 +84,7 @@ export const sharedHostingPlans: Plan[] = [
       tagline: 'Unmetered power & max dedicated resources',
       price: 9999,
       billing: 'yearly',
-      note: 'When you renew this plan',
+      note: '{price} when you renew this plan',
       ctaHref: 'https://my.zedgehost.com/index.php?rp=/store/web-hosting/enterprise',
       badge: 'Ultimate',
       specs: [
