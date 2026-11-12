@@ -12,49 +12,43 @@ export function Header({ currentPath = '' }: { currentPath?: string }) {
   const [openMenu, setOpenMenu] = useState<string | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
   const headerRef = useRef<HTMLElement>(null);
-  const menuTimer = useRef<number | null>(null);
-  const panelTimer = useRef<number | null>(null);
+  /**
+   * One close timer for the whole menu region. Every enter (nav item, panel,
+   * header) cancels it, so a pending close started by the panel can never fire
+   * while the pointer is back over the nav item.
+   */
+  const closeTimer = useRef<number | null>(null);
 
-  const cancelMenu = () => {
-    if (menuTimer.current !== null) {
-      window.clearTimeout(menuTimer.current);
-      menuTimer.current = null;
+  const cancelClose = () => {
+    if (closeTimer.current !== null) {
+      window.clearTimeout(closeTimer.current);
+      closeTimer.current = null;
     }
   };
 
-  const cancelPanel = () => {
-    if (panelTimer.current !== null) {
-      window.clearTimeout(panelTimer.current);
-      panelTimer.current = null;
-    }
+  const scheduleClose = () => {
+    cancelClose();
+    closeTimer.current = window.setTimeout(() => {
+      closeTimer.current = null;
+      setOpenMenu(null);
+    }, CLOSE_DELAY);
   };
 
   const openNavMenu = (label: string) => {
-    cancelMenu();
+    cancelClose();
     setOpenMenu(label);
-  };
-
-  const closeMenu = () => {
-    menuTimer.current = window.setTimeout(() => {
-      menuTimer.current = null;
-      setOpenMenu(null);
-    }, CLOSE_DELAY);
-  };
-
-  const closePanel = () => {
-    panelTimer.current = window.setTimeout(() => {
-      panelTimer.current = null;
-      setOpenMenu(null);
-    }, CLOSE_DELAY);
   };
 
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') setOpenMenu(null);
+      if (event.key !== 'Escape') return;
+      cancelClose();
+      setOpenMenu(null);
     };
 
     const onPointerDown = (event: PointerEvent) => {
       if (headerRef.current && !headerRef.current.contains(event.target as Node)) {
+        cancelClose();
         setOpenMenu(null);
       }
     };
@@ -65,14 +59,18 @@ export function Header({ currentPath = '' }: { currentPath?: string }) {
     return () => {
       document.removeEventListener('keydown', onKeyDown);
       document.removeEventListener('pointerdown', onPointerDown);
-      cancelMenu();
-      cancelPanel();
+      cancelClose();
     };
   }, []);
 
   return (
     <>
-      <header className="zh-header" ref={headerRef} onMouseLeave={closeMenu}>
+      <header
+        className="zh-header"
+        ref={headerRef}
+        onMouseEnter={cancelClose}
+        onMouseLeave={scheduleClose}
+      >
         <Container>
           <div className="zh-header__inner">
             <a className="zh-logo" href="index.html" aria-label="ZedgeHost home">
@@ -113,7 +111,7 @@ export function Header({ currentPath = '' }: { currentPath?: string }) {
                       }`}
                       key={item.label}
                       onMouseEnter={() => openNavMenu(item.label)}
-                      onMouseLeave={closeMenu}
+                      onMouseLeave={scheduleClose}
                     >
                       <button
                         type="button"
@@ -133,8 +131,7 @@ export function Header({ currentPath = '' }: { currentPath?: string }) {
                         <div
                           className="zh-mega"
                           id={menuId}
-                          onMouseEnter={cancelPanel}
-                          onMouseLeave={closePanel}
+                          onMouseEnter={cancelClose}
                         >
                           <Container>
                             <div className="zh-mega__grid">

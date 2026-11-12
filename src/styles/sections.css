@@ -531,6 +531,9 @@
 
 /* ---------- CTA bands ---------- */
 .zh-cta-band {
+  /* The band is rendered outside a Section, so it owns its own breathing room
+     instead of sitting flush against the section above and the footer below. */
+  margin-block: clamp(24px, 3.5vw, 48px);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
