@@ -189,6 +189,15 @@
   gap: var(--zh-space-6);
 }
 
+/* One link column next to the promo card, or just a short link list. */
+.zh-mega__grid--single {
+  grid-template-columns: 1.4fr 1fr;
+}
+
+.zh-mega__grid--plain {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
 .zh-mega__label {
   margin-bottom: var(--zh-space-3);
   color: var(--zh-muted);

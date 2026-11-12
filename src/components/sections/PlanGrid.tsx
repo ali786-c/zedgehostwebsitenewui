@@ -1,16 +1,19 @@
-import { useState } from 'react';
 import { useCurrency } from '../../app/currency';
-import type { BillingPeriod, Plan } from '../../content/types';
-import { formatPrice } from '../../lib/format';
-import { resolvePlanAmount } from '../../lib/plans';
+import type { Plan } from '../../content/types';
+import { formatPrice, monthlyEquivalent } from '../../lib/format';
 import { Badge } from '../ui/Badge';
 import { Button } from '../ui/Button';
 import { Icon } from '../ui/Icon';
 
-function PlanCard({ plan, period }: { plan: Plan; period: BillingPeriod }) {
+/** Cards always quote a per-month price; yearly plans are shown as their monthly share. */
+function monthlyAmount(plan: Plan): number {
+  return plan.billing === 'yearly' ? monthlyEquivalent(plan.price) : plan.price;
+}
+
+function PlanCard({ plan }: { plan: Plan }) {
   const { currency } = useCurrency();
-  const amount = resolvePlanAmount(plan, period);
-  const suffix = period === 'monthly' ? 'month' : 'year';
+  const amount = monthlyAmount(plan);
+  const note = plan.note.replace('{price}', formatPrice(plan.price, currency));
 
   return (
     <article className={`zh-plan${plan.popular ? ' zh-plan--popular' : ''}`}>
@@ -24,11 +27,9 @@ function PlanCard({ plan, period }: { plan: Plan; period: BillingPeriod }) {
 
       <p className="zh-plan__price">
         {formatPrice(amount, currency)}
-        <span>/ {suffix}</span>
+        <span>/ month</span>
       </p>
-      <p className="zh-plan__note">
-        {plan.note.replace('{price}', formatPrice(amount, currency))}
-      </p>
+      <p className="zh-plan__note">{note}</p>
 
       <div className="zh-plan__cta">
         <Button href={plan.ctaHref} variant={plan.popular ? 'on-dark' : 'primary'} block>
@@ -70,46 +71,18 @@ interface PlanGridProps {
 }
 
 export function PlanGrid({ plans, note }: PlanGridProps) {
-  const firstPlan = plans[0];
-  // The monthly toggle only makes sense when every plan is priced per year.
-  const showToggle = plans.length > 0 && plans.every((plan) => plan.billing === 'yearly');
-  const [billing, setBilling] = useState<BillingPeriod>(firstPlan?.billing ?? 'yearly');
-
   if (plans.length === 0) return null;
 
   return (
     <div>
       <div className="zh-plans__toolbar">
-        {showToggle ? (
-          <div className="zh-billing" role="group" aria-label="Billing period">
-            <button
-              type="button"
-              aria-pressed={billing === 'yearly'}
-              onClick={() => setBilling('yearly')}
-            >
-              Yearly
-            </button>
-            <button
-              type="button"
-              aria-pressed={billing === 'monthly'}
-              onClick={() => setBilling('monthly')}
-            >
-              Monthly
-            </button>
-          </div>
-        ) : (
-          <p style={{ color: 'var(--zh-muted)', fontSize: '13px' }}>Monthly billing</p>
-        )}
-        {note && <p style={{ color: 'var(--zh-muted)', fontSize: '13px' }}>{note}</p>}
+        <p className="zh-plans__period">All prices per month</p>
+        {note && <p className="zh-plans__note">{note}</p>}
       </div>
 
       <div className="zh-plans__grid" data-reveal-group>
         {plans.map((plan) => (
-          <PlanCard
-            key={plan.name}
-            plan={plan}
-            period={plan.billing === 'yearly' && showToggle ? billing : plan.billing}
-          />
+          <PlanCard key={plan.name} plan={plan} />
         ))}
       </div>
     </div>

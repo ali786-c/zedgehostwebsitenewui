@@ -263,28 +263,30 @@
   margin-bottom: var(--zh-space-5);
 }
 
-.zh-billing {
+.zh-plans__period {
   display: inline-flex;
-  padding: 4px;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
   border: 1px solid var(--zh-border);
   border-radius: var(--zh-radius-pill);
   background: #fff;
-}
-
-.zh-billing button {
-  padding: 7px 16px;
-  border-radius: var(--zh-radius-pill);
-  color: var(--zh-muted);
+  color: var(--zh-ink);
   font-size: 13px;
   font-weight: 600;
-  transition:
-    background var(--zh-transition),
-    color var(--zh-transition);
 }
 
-.zh-billing button[aria-pressed='true'] {
-  background: var(--zh-deep);
-  color: #fff;
+.zh-plans__period::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--zh-green);
+}
+
+.zh-plans__note {
+  color: var(--zh-muted);
+  font-size: 13px;
 }
 
 .zh-plans__grid {

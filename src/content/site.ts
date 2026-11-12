@@ -81,29 +81,6 @@ export const navigation: NavItem[] = [
           },
         ],
       },
-      {
-        title: 'More services',
-        links: [
-          {
-            label: 'Dedicated Server',
-            href: 'dedicated-server.html',
-            description: 'Full control of an entire server.',
-            icon: 'server',
-          },
-          {
-            label: 'Reseller Hosting',
-            href: 'reseller-hosting.html',
-            description: 'Start your own hosting business.',
-            icon: 'layers',
-          },
-          {
-            label: 'Website Security',
-            href: 'siteLock.html',
-            description: 'Malware scanning and website protection.',
-            icon: 'shield',
-          },
-        ],
-      },
     ],
     promo: {
       title: '70% Off for your first Domain',
@@ -120,49 +97,26 @@ export const navigation: NavItem[] = [
         title: 'Domain',
         links: [
           {
-            label: 'Domain Name Search',
+            label: 'Registration',
             href: 'domain-search.html',
-            description: 'Book your domain here.',
+            description: 'Search and register your domain name.',
             icon: 'globe',
           },
           {
-            label: 'Domain Pricing',
+            label: 'Pricing',
             href: 'https://my.zedgehost.com/cart.php?a=add&domain=register#domainExtensionsPricing',
             description: 'View domain registration pricing.',
             icon: 'card',
           },
           {
-            label: 'Domain Transfer',
+            label: 'Transfer',
             href: 'https://my.zedgehost.com/cart.php?a=add&domain=transfer',
             description: 'Transfer your domain to ZedgeHost.',
             icon: 'refresh',
           },
         ],
       },
-      {
-        title: 'Popular extensions',
-        links: [
-          {
-            label: 'New gTLDs',
-            href: 'new-gtlds.html',
-            description: 'Fresh domain extensions for new brands.',
-            icon: 'sparkles',
-          },
-          {
-            label: 'Free gTLDs',
-            href: 'free-gtlds.html',
-            description: 'Free domain offers with hosting plans.',
-            icon: 'star',
-          },
-        ],
-      },
     ],
-    promo: {
-      title: 'Reliable Managed WordPress Hosting',
-      text: 'Fast, secure and always supported hosting for your WordPress website.',
-      ctaLabel: 'See Pricing',
-      ctaHref: 'wordpress-hosting.html',
-    },
   },
   { label: 'Contact', href: site.contact },
   { label: 'Blog', href: 'blog.html' },
@@ -181,10 +135,7 @@ export const footerColumns: FooterColumn[] = [
       { label: 'Shared Hosting', href: 'shared-hosting.html' },
       { label: 'WordPress Hosting', href: 'wordpress-hosting.html' },
       { label: 'Cloud Hosting', href: 'cloud-hosting.html' },
-      { label: 'Dedicated Server', href: 'dedicated-server.html' },
-      { label: 'Website Security', href: 'siteLock.html' },
       { label: 'VPS Hosting', href: 'linux-vps-server.html' },
-      { label: 'Reseller Hosting', href: 'reseller-hosting.html' },
     ],
   },
   {

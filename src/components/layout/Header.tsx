@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { navigation } from '../../content/site';
+import { navigation, type NavLink } from '../../content/site';
 import { Button } from '../ui/Button';
 import { Container } from '../ui/Container';
 import { Icon } from '../ui/Icon';
@@ -7,6 +7,22 @@ import { MobileNav } from './MobileNav';
 
 /** Grace period before a hovered dropdown closes, so moving into the panel is safe. */
 const CLOSE_DELAY = 300;
+
+function MegaLink({ link }: { link: NavLink }) {
+  return (
+    <a className="zh-mega__link" href={link.href}>
+      {link.icon && (
+        <span className="zh-mega__icon">
+          <Icon name={link.icon} size={19} />
+        </span>
+      )}
+      <span>
+        <strong>{link.label}</strong>
+        {link.description && <p>{link.description}</p>}
+      </span>
+    </a>
+  );
+}
 
 export function Header({ currentPath = '' }: { currentPath?: string }) {
   const [openMenu, setOpenMenu] = useState<string | null>(null);
@@ -103,6 +119,8 @@ export function Header({ currentPath = '' }: { currentPath?: string }) {
 
                   const menuId = `mega-${item.label.toLowerCase()}`;
                   const isOpen = openMenu === item.label;
+                  /** A single link column without a promo fills the panel as a row of cards. */
+                  const isShortMenu = !item.promo && item.columns?.length === 1;
 
                   return (
                     <li
@@ -134,25 +152,27 @@ export function Header({ currentPath = '' }: { currentPath?: string }) {
                           onMouseEnter={cancelClose}
                         >
                           <Container>
-                            <div className="zh-mega__grid">
-                              {item.columns?.map((column) => (
-                                <div key={column.title}>
-                                  <p className="zh-mega__label">{column.title}</p>
-                                  {column.links.map((link) => (
-                                    <a className="zh-mega__link" href={link.href} key={link.label}>
-                                      {link.icon && (
-                                        <span className="zh-mega__icon">
-                                          <Icon name={link.icon} size={19} />
-                                        </span>
-                                      )}
-                                      <span>
-                                        <strong>{link.label}</strong>
-                                        {link.description && <p>{link.description}</p>}
-                                      </span>
-                                    </a>
+                            <div
+                              className={`zh-mega__grid${
+                                isShortMenu
+                                  ? ' zh-mega__grid--plain'
+                                  : item.columns?.length === 1
+                                    ? ' zh-mega__grid--single'
+                                    : ''
+                              }`}
+                            >
+                              {isShortMenu
+                                ? item.columns?.[0].links.map((link) => (
+                                    <MegaLink key={link.label} link={link} />
+                                  ))
+                                : item.columns?.map((column) => (
+                                    <div key={column.title}>
+                                      <p className="zh-mega__label">{column.title}</p>
+                                      {column.links.map((link) => (
+                                        <MegaLink key={link.label} link={link} />
+                                      ))}
+                                    </div>
                                   ))}
-                                </div>
-                              ))}
                               {item.promo && (
                                 <div className="zh-mega__promo">
                                   <div>
