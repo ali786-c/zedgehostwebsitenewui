@@ -4,7 +4,7 @@ import { Icon } from '../ui/Icon';
 
 export function HostingGrid({ items }: { items: HostingType[] }) {
   return (
-    <div className="zh-hosting-grid">
+    <div className="zh-hosting-grid" data-reveal-group>
       {items.map((item) => (
         <article className="zh-hosting-card" key={item.title}>
           <div className="zh-hosting-card__top">

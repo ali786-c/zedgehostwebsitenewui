@@ -5,7 +5,7 @@ import { Section } from '../ui/Section';
 export function TldTable({ data }: { data: TldTableSectionData }) {
   return (
     <Section eyebrow={data.eyebrow} title={data.title} subtitle={data.subtitle}>
-      <div className="zh-tlds__scroll">
+      <div className="zh-tlds__scroll" data-reveal>
         <table className="zh-tlds">
           <thead>
             <tr>

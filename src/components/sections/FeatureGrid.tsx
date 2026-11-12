@@ -3,7 +3,7 @@ import { Icon } from '../ui/Icon';
 
 export function FeatureGrid({ features }: { features: Feature[] }) {
   return (
-    <div className="zh-feature-grid">
+    <div className="zh-feature-grid" data-reveal-group>
       {features.map((feature) => (
         <article className="zh-feature" key={feature.title}>
           <span className="zh-icon-tile">

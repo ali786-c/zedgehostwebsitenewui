@@ -6,7 +6,7 @@ export function AboutContent() {
   const contactSection = aboutSections.find((section) => section.title === 'Contact Us');
 
   return (
-    <div className="zh-about-grid">
+    <div className="zh-about-grid" data-reveal-group>
       {contentSections.map((section) => (
         <article className="zh-about-card" key={section.title}>
           <h2>{section.title}</h2>

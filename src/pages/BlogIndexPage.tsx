@@ -33,7 +33,7 @@ export function BlogIndexPage() {
 
       <section className="zh-section">
         <Container>
-          <div className="zh-post-grid">
+          <div className="zh-post-grid" data-reveal-group>
             {blogIndex.cards.map((card) => (
               <BlogCard card={card} key={card.href} />
             ))}

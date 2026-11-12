@@ -6,7 +6,7 @@ import { Section } from '../ui/Section';
 export function SplitSection({ data }: { data: SplitSectionData }) {
   return (
     <Section tone={data.tone ?? 'default'}>
-      <div className={`zh-split${data.reverse ? ' zh-split--reverse' : ''}`}>
+      <div className={`zh-split${data.reverse ? ' zh-split--reverse' : ''}`} data-reveal>
         <div>
           {data.eyebrow && <span className="zh-eyebrow">{data.eyebrow}</span>}
           <h2>{data.title}</h2>

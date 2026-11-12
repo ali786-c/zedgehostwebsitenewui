@@ -26,13 +26,15 @@ export function FAQSection({
     <section className={`zh-section${tone === 'mint' ? ' zh-section--mint' : ''}`} id={id}>
       <Container>
         <div className="zh-faq">
-          <div className="zh-faq__intro">
+          <div className="zh-faq__intro" data-reveal>
             <span className="zh-eyebrow">{eyebrow}</span>
             <h2>{title}</h2>
             {subtitle && <p>{subtitle}</p>}
             {cta && <Button href={cta.href}>{cta.label}</Button>}
           </div>
-          <Accordion items={items} />
+          <div className="zh-faq__list" data-reveal>
+            <Accordion items={items} />
+          </div>
         </div>
       </Container>
     </section>

@@ -22,7 +22,7 @@ export function ContentPage({ data }: { data: ContentPageData }) {
           <ArticleBody blocks={data.blocks} />
 
           {data.cta && (
-            <div className="zh-article-cta">
+            <div className="zh-article-cta" data-reveal>
               <p>
                 <InlineText runs={data.cta.content} />
               </p>

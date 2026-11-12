@@ -70,7 +70,7 @@ export function BlogPostPage({ post }: { post: BlogPostData }) {
             <span className="zh-eyebrow">Keep reading</span>
             <h2>More guides from the ZedgeHost blog</h2>
           </div>
-          <div className="zh-post-grid">
+          <div className="zh-post-grid" data-reveal-group>
             {related.map((entry) => (
               <BlogCard
                 key={entry.slug}

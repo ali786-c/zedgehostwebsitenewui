@@ -5,7 +5,7 @@ import { Container } from '../ui/Container';
 export function CtaBand({ data }: { data: CtaBandData }) {
   return (
     <Container>
-      <div className="zh-cta-band">
+      <div className="zh-cta-band" data-reveal>
         <div>
           <h2>{data.title}</h2>
           <p>{data.text}</p>

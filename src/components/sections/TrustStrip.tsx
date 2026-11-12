@@ -6,7 +6,7 @@ export function TrustStrip({ items }: { items: TrustItem[] }) {
   return (
     <div className="zh-trust">
       <Container>
-        <div className="zh-trust__grid">
+        <div className="zh-trust__grid" data-reveal-group>
           {items.map((item) => (
             <div className="zh-trust__item" key={item.title}>
               <Icon name={item.icon} size={22} />

@@ -1,0 +1,196 @@
+/* ==========================================================================
+   Motion system
+   One easing family, short durations, transform/opacity only. Everything here
+   degrades to "no motion" under prefers-reduced-motion, and the reveal layer
+   is only ever switched on by src/lib/motion.ts after JS has run.
+   ========================================================================== */
+
+/* ---------- Scroll reveal (JS adds .zh-reveal) ---------- */
+.zh-reveal {
+  opacity: 0;
+  transform: translate3d(0, var(--zh-reveal-shift), 0);
+  transition:
+    opacity var(--zh-reveal-dur) var(--zh-ease-out),
+    transform var(--zh-reveal-dur) var(--zh-ease-out);
+  transition-delay: var(--zh-reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.zh-reveal.is-revealed {
+  opacity: 1;
+  transform: none;
+  will-change: auto;
+}
+
+/* ---------- Entrance: hero and page headers ---------- */
+@keyframes zh-rise-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 14px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes zh-soft-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -4px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes zh-drop-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -8px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.zh-hero__grid > *,
+.zh-blog-hero__grid > * {
+  animation: zh-rise-in 720ms var(--zh-ease-out) both;
+}
+
+.zh-hero__grid > *:nth-child(2),
+.zh-blog-hero__grid > *:nth-child(2) {
+  animation-delay: 90ms;
+}
+
+.zh-auth__card {
+  animation: zh-rise-in 640ms var(--zh-ease-out) both;
+}
+
+.zh-article-page__hero {
+  animation: zh-rise-in 760ms var(--zh-ease-out) both;
+}
+
+.zh-article-answer {
+  animation: zh-soft-in 620ms var(--zh-ease-out) 120ms both;
+}
+
+.zh-hero__float {
+  animation: zh-rise-in 800ms var(--zh-ease-out) 220ms both;
+}
+
+.zh-hero__float--bottom {
+  animation-delay: 320ms;
+}
+
+/* ---------- Dropdowns ---------- */
+.zh-mega {
+  animation: zh-drop-in var(--zh-dur-2) var(--zh-ease-out) both;
+}
+
+.zh-mega__link,
+.zh-mega__promo {
+  animation: zh-soft-in var(--zh-dur-3) var(--zh-ease-out) both;
+}
+
+.zh-mega__grid > *:nth-child(2) {
+  animation-delay: 40ms;
+}
+
+.zh-mega__grid > *:nth-child(3) {
+  animation-delay: 80ms;
+}
+
+/* ---------- Accordion ---------- */
+.zh-accordion__panel:not([hidden]) {
+  animation: zh-soft-in var(--zh-dur-2) var(--zh-ease-out) both;
+}
+
+/* ---------- Cards and media ---------- */
+.zh-plan,
+.zh-feature,
+.zh-hosting-card,
+.zh-support__card,
+.zh-about-card,
+.zh-post-card,
+.zh-stat {
+  transition:
+    transform var(--zh-transition),
+    box-shadow var(--zh-transition),
+    border-color var(--zh-transition);
+}
+
+@media (hover: hover) {
+  .zh-post-card__media img {
+    transition: transform 900ms var(--zh-ease-out);
+  }
+
+  .zh-post-card:hover .zh-post-card__media img,
+  .zh-post-card:focus-within .zh-post-card__media img {
+    transform: scale(1.035);
+  }
+
+  .zh-hosting-card__link svg,
+  .zh-plan__cta svg,
+  .zh-btn svg {
+    transition: transform var(--zh-dur-2) var(--zh-ease-out);
+  }
+
+  .zh-hosting-card:hover .zh-hosting-card__link svg,
+  .zh-plan .zh-btn:hover svg,
+  .zh-btn:hover svg {
+    transform: translateX(3px);
+  }
+}
+
+.zh-btn:active {
+  transform: translateY(0) scale(0.99);
+}
+
+/* ---------- Motion off ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .zh-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .zh-hero__grid > *,
+  .zh-blog-hero__grid > *,
+  .zh-hero__float,
+  .zh-auth__card,
+  .zh-article-page__hero,
+  .zh-article-answer,
+  .zh-mega,
+  .zh-mega__link,
+  .zh-mega__promo,
+  .zh-accordion__panel:not([hidden]) {
+    animation: none;
+  }
+
+  .zh-post-card:hover .zh-post-card__media img,
+  .zh-hosting-card:hover .zh-hosting-card__link svg,
+  .zh-plan .zh-btn:hover svg,
+  .zh-btn:hover svg {
+    transform: none;
+  }
+}
+
+@media print {
+  .zh-reveal {
+    opacity: 1;
+    transform: none;
+  }
+
+  .zh-hero__grid > *,
+  .zh-blog-hero__grid > *,
+  .zh-hero__float,
+  .zh-auth__card,
+  .zh-article-page__hero,
+  .zh-article-answer {
+    animation: none;
+  }
+}

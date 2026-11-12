@@ -40,7 +40,7 @@ export function Section({
     <section id={id} className={classes}>
       <Container>
         {(eyebrow || title) && (
-          <div className={`zh-section-head${center ? ' zh-section-head--center' : ''}`}>
+          <div className={`zh-section-head${center ? ' zh-section-head--center' : ''}`} data-reveal>
             {eyebrow && <span className="zh-eyebrow">{eyebrow}</span>}
             {title && <h2>{title}</h2>}
             {subtitle && <p>{subtitle}</p>}

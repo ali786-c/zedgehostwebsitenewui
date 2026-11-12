@@ -25,7 +25,7 @@ export function SupportSection({ eyebrow, title, cards, cta }: SupportSectionPro
           </Button>
         </div>
       </div>
-      <div className="zh-support__cards">
+      <div className="zh-support__cards" data-reveal-group>
         {cards.map((card) => (
           <article className="zh-support__card" key={card.title}>
             <span className="zh-icon-tile">

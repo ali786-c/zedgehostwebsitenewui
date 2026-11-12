@@ -103,7 +103,7 @@ export function PlanGrid({ plans, note }: PlanGridProps) {
         {note && <p style={{ color: 'var(--zh-muted)', fontSize: '13px' }}>{note}</p>}
       </div>
 
-      <div className="zh-plans__grid">
+      <div className="zh-plans__grid" data-reveal-group>
         {plans.map((plan) => (
           <PlanCard
             key={plan.name}

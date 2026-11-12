@@ -13,7 +13,7 @@ export function StatsBand({ title, subtitle, features, stats }: StatsBandProps) 
   return (
     <section className="zh-section zh-section--deep">
       <Container>
-        <div className="zh-section-head zh-section-head--center">
+        <div className="zh-section-head zh-section-head--center" data-reveal>
           <span className="zh-eyebrow" style={{ color: '#9be7a4' }}>
             Why ZedgeHost
           </span>
@@ -21,7 +21,7 @@ export function StatsBand({ title, subtitle, features, stats }: StatsBandProps) 
           <p>{subtitle}</p>
         </div>
         <FeatureGrid features={features} />
-        <div className="zh-stats">
+        <div className="zh-stats" data-reveal-group>
           {stats.map((stat) => (
             <div className="zh-stat" key={stat.label}>
               <strong>

@@ -6,7 +6,7 @@ import { Section } from '../ui/Section';
 export function GroupsSection({ data }: { data: GroupsSectionData }) {
   return (
     <Section tone="mint" eyebrow={data.eyebrow} title={data.title} subtitle={data.subtitle}>
-      <div className="zh-groups">
+      <div className="zh-groups" data-reveal-group>
         {data.groups.map((group) => (
           <article className="zh-group" key={group.title}>
             <h3>{group.title}</h3>

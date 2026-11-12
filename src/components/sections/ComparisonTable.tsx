@@ -12,7 +12,7 @@ export function ComparisonTable({ data, plans }: { data: ComparisonSectionData; 
 
   return (
     <Section eyebrow={data.eyebrow} title={data.title} subtitle={data.subtitle}>
-      <div className="zh-compare__scroll">
+      <div className="zh-compare__scroll" data-reveal>
         <table className="zh-compare">
           <thead>
             <tr>

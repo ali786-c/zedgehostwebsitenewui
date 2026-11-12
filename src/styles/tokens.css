@@ -46,6 +46,15 @@
   --zh-fs-h2: clamp(1.75rem, 3vw, 2.5rem);
   --zh-fs-display: clamp(2.25rem, 4.6vw, 3.5rem);
 
-  --zh-transition: 200ms cubic-bezier(0.2, 0.7, 0.3, 1);
-  --zh-transition-slow: 400ms cubic-bezier(0.2, 0.7, 0.3, 1);
+  /* Motion: one easing family, short durations. Nothing bouncy. */
+  --zh-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --zh-ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
+  --zh-dur-1: 160ms;
+  --zh-dur-2: 240ms;
+  --zh-dur-3: 400ms;
+  --zh-reveal-dur: 620ms;
+  --zh-reveal-shift: 18px;
+
+  --zh-transition: var(--zh-dur-2) var(--zh-ease-soft);
+  --zh-transition-slow: var(--zh-dur-3) var(--zh-ease-soft);
 }

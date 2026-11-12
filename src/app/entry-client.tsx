@@ -7,6 +7,8 @@ import '../styles/components.css';
 import '../styles/sections.css';
 import '../styles/article.css';
 import '../styles/auth.css';
+import '../styles/motion.css';
+import { initMotion } from '../lib/motion';
 import { CurrencyProvider } from './currency';
 import { getRoute } from './routes';
 
@@ -23,4 +25,6 @@ if (route && container) {
       </CurrencyProvider>
     </StrictMode>,
   );
+
+  initMotion();
 }
