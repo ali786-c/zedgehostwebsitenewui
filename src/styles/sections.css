@@ -620,9 +620,12 @@
     grid-template-columns: 1fr;
   }
 
+  /* The headline leads on narrow screens; artwork follows the content so the
+     page opens on the message instead of a decorative image. */
   .zh-hero__media {
-    max-width: 620px;
-    order: -1;
+    max-width: 560px;
+    margin-inline: auto;
+    width: 100%;
   }
 
   .zh-hero__float--top {

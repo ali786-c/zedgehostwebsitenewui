@@ -1,5 +1,5 @@
 import { StrictMode } from 'react';
-import { hydrateRoot } from 'react-dom/client';
+import { createRoot, hydrateRoot } from 'react-dom/client';
 import '../styles/tokens.css';
 import '../styles/base.css';
 import '../styles/layout.css';
@@ -17,14 +17,22 @@ const route = getRoute(pageKey);
 const container = document.getElementById('root');
 
 if (route && container) {
-  hydrateRoot(
-    container,
+  const tree = (
     <StrictMode>
       <CurrencyProvider>
         <route.Page />
       </CurrencyProvider>
-    </StrictMode>,
+    </StrictMode>
   );
+
+  // Prerendered pages arrive with markup to attach to; the Vite dev shell is
+  // empty, so mounting is the only correct start there (hydrating an empty
+  // container logs a mismatch).
+  if (container.firstElementChild) {
+    hydrateRoot(container, tree);
+  } else {
+    createRoot(container).render(tree);
+  }
 
   initMotion();
 }
